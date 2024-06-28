@@ -15,8 +15,8 @@
               "state": {
                 "file": "jjobkorea/JJOB.canvas",
                 "viewState": {
-                  "x": -7550.273222468844,
-                  "y": 1936.1063467472704,
+                  "x": -7877,
+                  "y": -565,
                   "zoom": -4
                 }
               }
@@ -151,9 +151,11 @@
   },
   "active": "7f3ef9c53ba2c1c8",
   "lastOpenFiles": [
-    "jjobkorea/Pasted image 20240625113731.png",
-    "jjobkorea/JJOB.canvas",
     "mvc 패턴 이해하기/mvc 패턴 흐름 이해하기.canvas",
+    "image/2024-06-19.md",
+    "image/2024-06-17.md",
+    "jjobkorea/JJOB.canvas",
+    "jjobkorea/Pasted image 20240625113731.png",
     "README.md",
     "무제 파일 1.canvas",
     "무제 파일.canvas",
@@ -171,8 +173,6 @@
     "image/Pasted image 20240625134053.png",
     "image/Pasted image 20240625134010.png",
     "image/Pasted image 20240625133559.png",
-    "image/2024-06-19.md",
-    "image/2024-06-17.md",
     "image",
     "jjobkorea",
     "mvc 패턴 이해하기"
