@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "9a869089661757a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "37c1e34a0ba8204a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f3ef9c53ba2c1c8",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "jjobkorea/JJOB.canvas",
+                "viewState": {
+                  "x": -5458.811101192736,
+                  "y": -754.4218094305816,
+                  "zoom": -4
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e02976a27972390d",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ad2bc688a95eb4d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "be43484f0935c54c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "aa9926bce79c478e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "418211357eba5f0a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "87835c895c0434e9",
+    "type": "split",
+    "children": [
+      {
+        "id": "0a477a585128f1f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c29cbc179a224a22",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "jjobkorea/JJOB.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "73a0b433fd2e9def",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "jjobkorea/JJOB.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1e13c9fe96c8dc50",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8b4fdb9fad6b6d55",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "jjobkorea/JJOB.canvas"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "7f3ef9c53ba2c1c8",
+  "lastOpenFiles": [
+    "jjobkorea/Pasted image 20240625113731.png",
+    "jjobkorea/JJOB.canvas",
+    "mvc 패턴 이해하기/mvc 패턴 흐름 이해하기.canvas",
+    "README.md",
+    "무제 파일 1.canvas",
+    "무제 파일.canvas",
+    "2024-06-28.md",
+    "BoardMapper.java",
+    "BoardMapper 2.java",
+    "BoardMapper 1.java",
+    "BoardController.java",
+    "image/Pasted image 20240625173007.png",
+    "image/Pasted image 20240625172718.png",
+    "image/Pasted image 20240625172541.png",
+    "image/Pasted image 20240625171119.png",
+    "image/Pasted image 20240625171032.png",
+    "image/Pasted image 20240625165631.png",
+    "image/Pasted image 20240625134053.png",
+    "image/Pasted image 20240625134010.png",
+    "image/Pasted image 20240625133559.png",
+    "image/2024-06-19.md",
+    "image/2024-06-17.md",
+    "image",
+    "jjobkorea",
+    "mvc 패턴 이해하기"
+  ]
+}
