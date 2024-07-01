@@ -34,7 +34,11 @@
 		{"id":"156f0e08f9dffb16","type":"file","file":"Pasted image 20240701112957.png","x":-5600,"y":3532,"width":400,"height":99},
 		{"id":"b65ab50798bc21ea","x":-5600,"y":3741,"width":584,"height":100,"type":"text","text":"# 하이카리씨피 데이터소스 완성 "},
 		{"id":"9fdb179cc1dfa43d","x":-6160,"y":3532,"width":189,"height":50,"type":"text","text":"데이터 소스 주입"},
-		{"id":"4117e4a19405564d","x":-6348,"y":2736,"width":377,"height":64,"color":"1","type":"text","text":"# 나의 sql 세션 생성"}
+		{"id":"4117e4a19405564d","x":-6348,"y":2736,"width":377,"height":64,"color":"1","type":"text","text":"# 나의 sql 세션 생성"},
+		{"id":"8c0ac81ed7cb98f7","x":-8360,"y":3888,"width":400,"height":52,"type":"file","file":"Pasted image 20240701114312.png"},
+		{"id":"dcc0826015202692","x":-8543,"y":3760,"width":766,"height":81,"type":"text","text":"# mapper에 대한 sql 세션을 매소드마다 얻어내고 있음 "},
+		{"id":"a63c17648dcfa902","x":-8600,"y":4060,"width":725,"height":50,"type":"file","file":"Pasted image 20240701114437.png"},
+		{"id":"740ff4b871c4c719","x":-8300,"y":3390,"width":840,"height":210,"type":"text","text":"#### 나는 sql 을 다 설정한 상태에서 마이바티스가 자동으로 인식하게 하고 있어 \n\nxml 설정파일은 여기 있고\nmapper은 여기 있고\n이런걸 다 설정해서 sql 세션을 이미 만들어 둔거.\n그래서 마이바티스가 그 세션을 부여 받고 있어서 따로 부가 설정이 필요 없었어. "}
 	],
 	"edges":[
 		{"id":"d234dbd9f2da445e","fromNode":"25bba6b1d5344bb1","fromSide":"right","toNode":"d6330e68ddcf5bc8","toSide":"left"},
