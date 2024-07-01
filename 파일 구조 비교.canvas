@@ -23,15 +23,18 @@
 		{"id":"2911664801b155d9","type":"file","file":"Pasted image 20240701112930.png","x":-7680,"y":3340,"width":1253,"height":50},
 		{"id":"7906d7e10744d322","type":"text","text":"# 설정 파일에서","x":-7307,"y":2800,"width":336,"height":63},
 		{"id":"afff88a536386b87","type":"file","file":"Pasted image 20240701112747.png","x":-7339,"y":2900,"width":400,"height":96},
-		{"id":"fc30b992740297d1","type":"text","text":"### 마이바티스 설정도 같이 넣어서 박스","x":-7358,"y":3390,"width":531,"height":61},
+		{"id":"fc30b992740297d1","type":"text","text":"### 마이바티스 설정도 같이 넣어서 공장 만들었어","x":-7358,"y":3390,"width":598,"height":74},
 		{"id":"fd4d4f650e8a2714","type":"text","text":"# sql 세션 얻음","x":-7281,"y":3820,"width":322,"height":77},
 		{"id":"87177a03698216a3","type":"file","file":"Pasted image 20240701113114.png","x":-7292,"y":3940,"width":400,"height":69},
 		{"id":"a3a81de0449e0c1f","x":-6892,"y":3851,"width":430,"height":92,"type":"text","text":"### 마이바티스가 설정된 상태로 sql 세션이 완성되는거야"},
-		{"id":"c8e6b81b77afc026","type":"file","file":"Pasted image 20240701113019.png","x":-5880,"y":3259,"width":400,"height":51},
-		{"id":"156f0e08f9dffb16","type":"file","file":"Pasted image 20240701112957.png","x":-5880,"y":3365,"width":400,"height":99},
-		{"id":"4117e4a19405564d","x":-6650,"y":2480,"width":377,"height":64,"color":"1","type":"text","text":"# 나의 sql 세션 생성"},
-		{"id":"3ef66127c36ee3af","type":"text","text":"## 데이터 소스","x":-5820,"y":3120,"width":280,"height":80},
-		{"id":"9fdb179cc1dfa43d","x":-6260,"y":3365,"width":189,"height":50,"type":"text","text":"데이터 소스 주입"}
+		{"id":"0586893e0ef84236","x":-5600,"y":3061,"width":398,"height":80,"type":"text","text":"# 하이카리 씨피를 만들고"},
+		{"id":"645086e4cb53f260","x":-5600,"y":3151,"width":400,"height":129,"type":"file","file":"Pasted image 20240701113719.png"},
+		{"id":"c6642da2f9beece1","x":-5600,"y":3411,"width":520,"height":90,"type":"text","text":"## 만들어둔  데이터 소스를 가져가 "},
+		{"id":"c8e6b81b77afc026","type":"file","file":"Pasted image 20240701113019.png","x":-5600,"y":3581,"width":400,"height":51},
+		{"id":"156f0e08f9dffb16","type":"file","file":"Pasted image 20240701112957.png","x":-5600,"y":3532,"width":400,"height":99},
+		{"id":"b65ab50798bc21ea","x":-5600,"y":3741,"width":584,"height":100,"type":"text","text":"# 하이카리씨피 데이터소스 완성 "},
+		{"id":"9fdb179cc1dfa43d","x":-6160,"y":3532,"width":189,"height":50,"type":"text","text":"데이터 소스 주입"},
+		{"id":"4117e4a19405564d","x":-6348,"y":2736,"width":377,"height":64,"color":"1","type":"text","text":"# 나의 sql 세션 생성"}
 	],
 	"edges":[
 		{"id":"d234dbd9f2da445e","fromNode":"25bba6b1d5344bb1","fromSide":"right","toNode":"d6330e68ddcf5bc8","toSide":"left"},
@@ -40,7 +43,7 @@
 		{"id":"1eb8bb73ceb9f687","fromNode":"c107cff926db5ee5","fromSide":"right","toNode":"4e901332524f9d15","toSide":"left"},
 		{"id":"b2cc31c692723fc0","fromNode":"57efcd4375083210","fromSide":"right","toNode":"4e901332524f9d15","toSide":"left"},
 		{"id":"dab95f5e6c4fa0a6","fromNode":"afff88a536386b87","fromSide":"bottom","toNode":"5d5cae43b78d04a7","toSide":"bottom"},
-		{"id":"5ac3fb8bcea53777","fromNode":"156f0e08f9dffb16","fromSide":"left","toNode":"2911664801b155d9","toSide":"right"},
-		{"id":"ab75b8865c2d5aaa","fromNode":"fc30b992740297d1","fromSide":"bottom","toNode":"fd4d4f650e8a2714","toSide":"top"}
+		{"id":"ab75b8865c2d5aaa","fromNode":"fc30b992740297d1","fromSide":"bottom","toNode":"fd4d4f650e8a2714","toSide":"top"},
+		{"id":"0f55a040b82e38b8","fromNode":"b65ab50798bc21ea","fromSide":"left","toNode":"2911664801b155d9","toSide":"right"}
 	]
 }
