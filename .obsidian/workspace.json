@@ -11,8 +11,15 @@
             "id": "35e038f6cd5d3478",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "canvas",
+              "state": {
+                "file": "jjobkorea/task.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              }
             }
           }
         ]
@@ -82,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "파일 구조 비교.canvas",
+                "file": "jjobkorea/task.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "파일 구조 비교.canvas",
+                "file": "jjobkorea/task.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "파일 구조 비교.canvas"
+                "file": "jjobkorea/task.canvas"
               }
             }
           }
@@ -143,48 +150,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "floating": {
-    "id": "66cd2aac5006754a",
-    "type": "floating",
-    "children": [
-      {
-        "id": "4e5e1e0c44e618fb",
-        "type": "window",
-        "children": [
-          {
-            "id": "753a3316cf047b29",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "7f3ef9c53ba2c1c8",
-                "type": "leaf",
-                "state": {
-                  "type": "canvas",
-                  "state": {
-                    "file": "파일 구조 비교.canvas",
-                    "viewState": {
-                      "x": -11657.446043635246,
-                      "y": 7583.544666683629,
-                      "zoom": 0.33333333333333365
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": -8,
-        "y": -8,
-        "width": 976,
-        "height": 1056,
-        "maximize": true,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "7f3ef9c53ba2c1c8",
+  "active": "35e038f6cd5d3478",
   "lastOpenFiles": [
+    "Pasted image 20240701172241.png",
+    "jjobkorea/JJOB.canvas",
+    "jjobkorea/task.canvas",
+    "파일 구조 비교.canvas",
     "Pasted image 20240701143354.png",
     "Pasted image 20240701143321.png",
     "Pasted image 20240701135537.png",
@@ -195,7 +166,6 @@
     "Pasted image 20240701121429.png",
     "Pasted image 20240701120744.png",
     "Pasted image 20240701120715.png",
-    "Pasted image 20240701120349.png",
     "application.properties",
     "BoardMapper 3.java",
     "mybatis-config 1.xml",
@@ -204,8 +174,6 @@
     "BoardMapper 1.java",
     "BoardMapper.java",
     "mybatis-config.xml",
-    "jjobkorea/JJOB.canvas",
-    "파일 구조 비교.canvas",
     "mvc 패턴 이해하기/mvc 패턴 흐름 이해하기.canvas",
     "image/2024-06-19.md",
     "image/2024-06-17.md",

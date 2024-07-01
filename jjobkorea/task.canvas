@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"64371de743de5a54","x":-142,"y":117,"width":250,"height":60,"type":"text","text":""},
+		{"id":"e00277b51fd9de50","x":-360,"y":-180,"width":400,"height":174,"type":"file","file":"Pasted image 20240701172241.png"},
+		{"id":"658caceadfcb8a15","x":-360,"y":-280,"width":332,"height":64,"type":"text","text":"# 파일 구조 흐름 "}
+	],
+	"edges":[]
+}
