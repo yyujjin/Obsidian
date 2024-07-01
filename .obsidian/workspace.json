@@ -4,22 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "37c1e34a0ba8204a",
+        "id": "8306374bdc435fde",
         "type": "tabs",
         "children": [
           {
-            "id": "7f3ef9c53ba2c1c8",
+            "id": "35e038f6cd5d3478",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "파일 구조 비교.canvas",
-                "viewState": {
-                  "x": -3861.0105124419542,
-                  "y": 2513.328866250628,
-                  "zoom": -1.9999999999999998
-                }
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -149,6 +142,46 @@
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false
     }
+  },
+  "floating": {
+    "id": "66cd2aac5006754a",
+    "type": "floating",
+    "children": [
+      {
+        "id": "4e5e1e0c44e618fb",
+        "type": "window",
+        "children": [
+          {
+            "id": "753a3316cf047b29",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "7f3ef9c53ba2c1c8",
+                "type": "leaf",
+                "state": {
+                  "type": "canvas",
+                  "state": {
+                    "file": "파일 구조 비교.canvas",
+                    "viewState": {
+                      "x": -3861.0105124419542,
+                      "y": 2513.328866250628,
+                      "zoom": -1.9999999999999998
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 860,
+        "y": 86,
+        "width": 980,
+        "height": 760,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
   },
   "active": "7f3ef9c53ba2c1c8",
   "lastOpenFiles": [
