@@ -58,7 +58,10 @@
 		{"id":"a23304238eedfc3f","x":-14055,"y":6680,"width":1149,"height":85,"type":"text","text":"MyBatis에서 \"매퍼 인터페이스의 구현체를 얻어낸다\"는 것은 주로 매퍼 XML 파일에 정의된 SQL 쿼리를 실행할 수 있는 객체를 생성한다는 의미입니다."},
 		{"id":"d9058d6c8af30677","x":-13825,"y":6200,"width":689,"height":245,"type":"text","text":"결론\n세션을 얻는다는 것은 MyBatis에서 데이터베이스와의 연결을 관리하고 SQL 쿼리를 실행하기 위해 필요한 과정입니다. sqlSession.getMapper() 메서드를 사용하여 매퍼 인터페이스의 구현체를 얻어내면, 이후 그 객체를 통해 실제로 데이터베이스와의 상호작용을 수행할 수 있습니다. 따라서 MyBatis를 사용하여 데이터베이스와 통신할 때는 세션을 얻는 것이 필수적인 과정입니다.\n\n\n\n"},
 		{"id":"0d59caaca330c95f","x":-14055,"y":6020,"width":836,"height":65,"type":"text","text":"## MyBatis는 세션을 매퍼에서 얻어내어 SQL 쿼리를 실행합니다."},
-		{"id":"d10302a183eea8ba","x":-13440,"y":7760,"width":680,"height":160,"type":"text","text":"BoardMapper 인터페이스를 @Autowired를 통해 주입받고 있습니다. 이는 Spring에서 관리하는 빈으로 등록되어 있는 BoardMapper의 구현체(Proxy 객체)가 필요할 때마다 자동으로 제공됩니다."}
+		{"id":"d10302a183eea8ba","x":-13440,"y":7760,"width":680,"height":160,"type":"text","text":"BoardMapper 인터페이스를 @Autowired를 통해 주입받고 있습니다. 이는 Spring에서 관리하는 빈으로 등록되어 있는 BoardMapper의 구현체(Proxy 객체)가 필요할 때마다 자동으로 제공됩니다."},
+		{"id":"a552d884008b6176","x":-13825,"y":7080,"width":865,"height":120,"type":"text","text":"Spring Boot에서는 spring-boot-starter-jdbc 또는 spring-boot-starter-data-jpa와 같은 스타터 의존성을 사용하여 기본적으로 HikariCP를 포함한 데이터베이스 연결 관련 라이브러리들이 함께 제공됩니다. 따라서 별도로 HikariCP에 대한 의존성을 직접 추가하지 않아도 됩니다. "},
+		{"id":"7cc6771f40b31432","x":-12560,"y":6520,"width":600,"height":160,"type":"text","text":"spring.datasource.url=jdbc:mysql://localhost:3306/mydatabase\nspring.datasource.username=root\nspring.datasource.password=password\nspring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver"},
+		{"id":"4101641a2232528d","x":-12160,"y":7000,"width":1083,"height":1010,"type":"text","text":"import org.apache.ibatis.session.SqlSessionFactory;\nimport org.mybatis.spring.SqlSessionFactoryBean;\nimport org.mybatis.spring.SqlSessionTemplate;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.context.ApplicationContext;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.core.io.support.PathMatchingResourcePatternResolver;\nimport javax.sql.DataSource;\n\n@Configuration\npublic class MyBatisConfig {\n\n    @Autowired\n    private ApplicationContext applicationContext;\n\n    @Bean\n    public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {\n        SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();\n        factoryBean.setDataSource(dataSource);\n        factoryBean.setMapperLocations(applicationContext.getResources(\"classpath:/mapper/**/*Mapper.xml\"));\n        factoryBean.setTypeAliasesPackage(\"com.board.domain\");\n        factoryBean.setConfiguration(mybatisConfig());\n        return factoryBean.getObject();\n    }\n\n    @Bean\n    public SqlSessionTemplate sqlSession(SqlSessionFactory sqlSessionFactory) {\n        return new SqlSessionTemplate(sqlSessionFactory);\n    }\n\n    @Bean\n    public org.apache.ibatis.session.Configuration mybatisConfig() {\n        return new org.apache.ibatis.session.Configuration();\n    }\n\n}"}
 	],
 	"edges":[
 		{"id":"d234dbd9f2da445e","fromNode":"25bba6b1d5344bb1","fromSide":"right","toNode":"d6330e68ddcf5bc8","toSide":"left"},
@@ -69,6 +72,8 @@
 		{"id":"dab95f5e6c4fa0a6","fromNode":"afff88a536386b87","fromSide":"bottom","toNode":"5d5cae43b78d04a7","toSide":"bottom"},
 		{"id":"ab75b8865c2d5aaa","fromNode":"fc30b992740297d1","fromSide":"bottom","toNode":"fd4d4f650e8a2714","toSide":"top"},
 		{"id":"0f55a040b82e38b8","fromNode":"b65ab50798bc21ea","fromSide":"left","toNode":"2911664801b155d9","toSide":"right"},
-		{"id":"7b1d08f46c8c6eb0","fromNode":"d9058d6c8af30677","fromSide":"bottom","toNode":"a23304238eedfc3f","toSide":"top"}
+		{"id":"7b1d08f46c8c6eb0","fromNode":"d9058d6c8af30677","fromSide":"bottom","toNode":"a23304238eedfc3f","toSide":"top"},
+		{"id":"3b0a8944d9d7f232","fromNode":"a552d884008b6176","fromSide":"right","toNode":"7cc6771f40b31432","toSide":"left"},
+		{"id":"141c27ed1ed422c3","fromNode":"7cc6771f40b31432","fromSide":"right","toNode":"4101641a2232528d","toSide":"top"}
 	]
 }
