@@ -45,7 +45,10 @@
 		{"id":"106b10babe83a1dd","x":-9777,"y":4480,"width":400,"height":83,"type":"file","file":"Pasted image 20240701120349.png"},
 		{"id":"c8685320428458a5","x":-10517,"y":4563,"width":400,"height":70,"type":"file","file":"Pasted image 20240701120715.png"},
 		{"id":"baca26550362967e","x":-10517,"y":4680,"width":400,"height":93,"type":"file","file":"Pasted image 20240701120744.png"},
-		{"id":"93a10d21dd495a2b","x":-10720,"y":4459,"width":706,"height":104,"type":"text","text":"# sqlSeesionTemplate을 사용하여 sql 세션을 생성해서 계속 재사용하게 만듬 "}
+		{"id":"93a10d21dd495a2b","x":-10720,"y":4459,"width":706,"height":104,"type":"text","text":"# sqlSeesionTemplate을 사용하여 sql 세션을 생성해서 계속 재사용하게 만듬 "},
+		{"id":"8c7e8201c67ac5f4","x":-3407,"y":2440,"width":727,"height":141,"type":"text","text":"# 내가 설정한 공장에서 세션을 받아오는게 아니라/."},
+		{"id":"db02b4e0931d7345","x":-11400,"y":5080,"width":400,"height":143,"type":"file","file":"Pasted image 20240701121429.png"},
+		{"id":"e1e851446db3111d","x":-11400,"y":5240,"width":400,"height":101,"type":"file","file":"Pasted image 20240701121529.png"}
 	],
 	"edges":[
 		{"id":"d234dbd9f2da445e","fromNode":"25bba6b1d5344bb1","fromSide":"right","toNode":"d6330e68ddcf5bc8","toSide":"left"},
