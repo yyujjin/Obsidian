@@ -40,7 +40,9 @@
 		{"id":"740ff4b871c4c719","type":"text","text":"#### 나는 sql 을 다 설정한 상태에서 마이바티스가 자동으로 인식하게 하고 있어 \n\nxml 설정파일은 여기 있고\nmapper은 여기 있고\n이런걸 다 설정해서 sql 세션을 이미 만들어 둔거.\n그래서 마이바티스가 그 세션을 부여 받고 있어서 따로 부가 설정이 필요 없었어. ","x":-9085,"y":3254,"width":840,"height":210},
 		{"id":"a63c17648dcfa902","type":"file","file":"Pasted image 20240701114437.png","x":-9085,"y":3464,"width":725,"height":50},
 		{"id":"8f1cb189d8910830","x":-8512,"y":4160,"width":250,"height":60,"type":"text","text":"매퍼 인터페이스는 껍데기고 그걸 실행했을 때 마이바티스가 작동하게 하려면 "},
-		{"id":"a81f9f2532df8afa","x":-8303,"y":4141,"width":250,"height":60,"type":"text","text":"서로 연결하니까 매퍼가 동작하면 바로 xml로 연결되는거지"}
+		{"id":"a81f9f2532df8afa","x":-8303,"y":4141,"width":250,"height":60,"type":"text","text":"서로 연결하니까 매퍼가 동작하면 바로 xml로 연결되는거지"},
+		{"id":"77dfae7a5777d3c8","x":-9702,"y":4355,"width":250,"height":60,"type":"text","text":"# 학원"},
+		{"id":"106b10babe83a1dd","x":-9777,"y":4480,"width":400,"height":83,"type":"file","file":"Pasted image 20240701120349.png"}
 	],
 	"edges":[
 		{"id":"d234dbd9f2da445e","fromNode":"25bba6b1d5344bb1","fromSide":"right","toNode":"d6330e68ddcf5bc8","toSide":"left"},
