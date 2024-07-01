@@ -163,9 +163,9 @@
                   "state": {
                     "file": "파일 구조 비교.canvas",
                     "viewState": {
-                      "x": -9577,
-                      "y": 4385,
-                      "zoom": 0
+                      "x": -3072.339546069922,
+                      "y": 1622.9263023401127,
+                      "zoom": -0.6666666666666667
                     }
                   }
                 }
@@ -178,13 +178,15 @@
         "y": 48,
         "width": 980,
         "height": 760,
-        "maximize": false,
+        "maximize": true,
         "zoom": 0
       }
     ]
   },
   "active": "7f3ef9c53ba2c1c8",
   "lastOpenFiles": [
+    "Pasted image 20240701120744.png",
+    "Pasted image 20240701120715.png",
     "Pasted image 20240701120349.png",
     "Pasted image 20240701114437.png",
     "Pasted image 20240701114312.png",
@@ -195,8 +197,6 @@
     "Pasted image 20240701112930.png",
     "Pasted image 20240701112747.png",
     "application.properties",
-    "Pasted image 20240701110917.png",
-    "Pasted image 20240701110900.png",
     "BoardMapper 3.java",
     "mybatis-config 1.xml",
     "BoardMapper.xml",
