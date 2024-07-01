@@ -21,15 +21,24 @@
 		{"id":"826cf033311bb7f6","x":-1642,"y":1100,"width":400,"height":65,"type":"file","file":"Pasted image 20240701103808.png"},
 		{"id":"db705d6d73b3428d","x":-1642,"y":1165,"width":400,"height":203,"type":"file","file":"Pasted image 20240701103826.png"},
 		{"id":"b8953653c6cc82bb","x":-1638,"y":1368,"width":396,"height":60,"type":"text","text":"## 데이터 정보 적어둠 "},
-		{"id":"25bba6b1d5344bb1","x":-4040,"y":1080,"width":400,"height":140,"type":"file","file":"Pasted image 20240701104553.png"},
-		{"id":"becfb08e2e4d2e0f","x":-4022,"y":960,"width":365,"height":73,"type":"text","text":"# MAPPER가 추가되면 "},
-		{"id":"d6330e68ddcf5bc8","x":-3440,"y":1061,"width":400,"height":179,"type":"file","file":"Pasted image 20240701104618.png"},
-		{"id":"abd7d8408864b134","x":-3513,"y":957,"width":250,"height":60,"type":"text","text":"# 각 MAPPER마다XML 파일 만들고 "}
+		{"id":"25bba6b1d5344bb1","x":-4840,"y":1387,"width":400,"height":140,"type":"file","file":"Pasted image 20240701104553.png"},
+		{"id":"becfb08e2e4d2e0f","x":-4822,"y":1267,"width":365,"height":73,"type":"text","text":"# MAPPER가 추가되면 "},
+		{"id":"abd7d8408864b134","x":-4296,"y":1267,"width":513,"height":57,"type":"text","text":"# 각 MAPPER마다XML 파일 만들고 "},
+		{"id":"d6330e68ddcf5bc8","x":-4240,"y":1368,"width":400,"height":179,"type":"file","file":"Pasted image 20240701104618.png"},
+		{"id":"c107cff926db5ee5","x":-3640,"y":1428,"width":400,"height":60,"type":"file","file":"Pasted image 20240701104704.png"},
+		{"id":"eb48149962076dca","x":-3669,"y":1267,"width":429,"height":62,"type":"text","text":"# 설정파일에 알려주는 거야"},
+		{"id":"1eb66af354482877","type":"text","text":"# MAPPER가 추가되면 ","x":-4840,"y":1720,"width":365,"height":73},
+		{"id":"b414fe8f20e1a0e4","x":-4839,"y":1840,"width":400,"height":79,"type":"file","file":"Pasted image 20240701104746.png"},
+		{"id":"560d552766c0de80","x":-4240,"y":1831,"width":400,"height":88,"type":"file","file":"Pasted image 20240701104820.png"},
+		{"id":"fe17958eb562ca66","type":"text","text":"# 각 MAPPER마다XML 파일 만들고 ","x":-4296,"y":1720,"width":513,"height":57}
 	],
 	"edges":[
 		{"id":"a265bc7cad1ccc50","fromNode":"7a692dcc7fc715b2","fromSide":"right","toNode":"f8fb13c693994d6c","toSide":"left"},
 		{"id":"e935eec102c3288d","fromNode":"c73d2a1baa8279f1","fromSide":"left","toNode":"87354a1b1108cbfc","toSide":"right"},
 		{"id":"2698976a2ea5da55","fromNode":"87354a1b1108cbfc","fromSide":"bottom","toNode":"847bf89bfbbfd61d","toSide":"top"},
-		{"id":"ef0276cc34e50d3a","fromNode":"7fa106363155ad41","fromSide":"left","toNode":"847bf89bfbbfd61d","toSide":"right"}
+		{"id":"ef0276cc34e50d3a","fromNode":"7fa106363155ad41","fromSide":"left","toNode":"847bf89bfbbfd61d","toSide":"right"},
+		{"id":"d234dbd9f2da445e","fromNode":"25bba6b1d5344bb1","fromSide":"right","toNode":"d6330e68ddcf5bc8","toSide":"left"},
+		{"id":"7d61fdd5a2930bc9","fromNode":"d6330e68ddcf5bc8","fromSide":"right","toNode":"c107cff926db5ee5","toSide":"left"},
+		{"id":"3e92eab2c856b8be","fromNode":"b414fe8f20e1a0e4","fromSide":"right","toNode":"560d552766c0de80","toSide":"left"}
 	]
 }
