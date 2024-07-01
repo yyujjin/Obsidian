@@ -20,7 +20,11 @@
 		{"id":"c2eca8c451ace6b1","x":-1636,"y":824,"width":588,"height":50,"type":"text","text":"### db 설정 파일에 xml 이 어디 있는지 알려주고 있음 "},
 		{"id":"826cf033311bb7f6","x":-1642,"y":1100,"width":400,"height":65,"type":"file","file":"Pasted image 20240701103808.png"},
 		{"id":"db705d6d73b3428d","x":-1642,"y":1165,"width":400,"height":203,"type":"file","file":"Pasted image 20240701103826.png"},
-		{"id":"b8953653c6cc82bb","x":-1638,"y":1368,"width":396,"height":60,"type":"text","text":"## 데이터 정보 적어둠 "}
+		{"id":"b8953653c6cc82bb","x":-1638,"y":1368,"width":396,"height":60,"type":"text","text":"## 데이터 정보 적어둠 "},
+		{"id":"25bba6b1d5344bb1","x":-4040,"y":1080,"width":400,"height":140,"type":"file","file":"Pasted image 20240701104553.png"},
+		{"id":"becfb08e2e4d2e0f","x":-4022,"y":960,"width":365,"height":73,"type":"text","text":"# MAPPER가 추가되면 "},
+		{"id":"d6330e68ddcf5bc8","x":-3440,"y":1061,"width":400,"height":179,"type":"file","file":"Pasted image 20240701104618.png"},
+		{"id":"abd7d8408864b134","x":-3513,"y":957,"width":250,"height":60,"type":"text","text":"# 각 MAPPER마다XML 파일 만들고 "}
 	],
 	"edges":[
 		{"id":"a265bc7cad1ccc50","fromNode":"7a692dcc7fc715b2","fromSide":"right","toNode":"f8fb13c693994d6c","toSide":"left"},
