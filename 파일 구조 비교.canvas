@@ -14,12 +14,18 @@
 		{"id":"87354a1b1108cbfc","x":-2380,"y":231,"width":400,"height":197,"type":"file","file":"Pasted image 20240701103416.png"},
 		{"id":"2e5a3ace6e3b06e0","x":-2380,"y":177,"width":400,"height":54,"type":"text","text":"## 각페이지별 sql 적어둠     "},
 		{"id":"7a692dcc7fc715b2","type":"file","file":"Pasted image 20240701102230.png","x":-1640,"y":560,"width":400,"height":58},
-		{"id":"55d4cdc1995bb906","type":"text","text":"sql문이 아닌  경로를 적어둠( )        ","x":-1636,"y":774,"width":309,"height":50},
+		{"id":"55d4cdc1995bb906","type":"text","text":"## sql문이 아닌  경로를 적어둠( )        ","x":-1636,"y":774,"width":416,"height":50},
 		{"id":"7fa106363155ad41","x":-1636,"y":618,"width":400,"height":154,"type":"file","file":"Pasted image 20240701103507.png"},
-		{"id":"847bf89bfbbfd61d","x":-2233,"y":639,"width":250,"height":60,"type":"text","text":"### 특이사항"}
+		{"id":"847bf89bfbbfd61d","x":-2533,"y":560,"width":553,"height":221,"type":"text","text":"### 특이사항\n\n![[Pasted image 20240701103703.png]]\n\n공통적으로 적어둠 "},
+		{"id":"c2eca8c451ace6b1","x":-1636,"y":824,"width":588,"height":50,"type":"text","text":"### db 설정 파일에 xml 이 어디 있는지 알려주고 있음 "},
+		{"id":"826cf033311bb7f6","x":-1642,"y":1100,"width":400,"height":65,"type":"file","file":"Pasted image 20240701103808.png"},
+		{"id":"db705d6d73b3428d","x":-1642,"y":1165,"width":400,"height":203,"type":"file","file":"Pasted image 20240701103826.png"},
+		{"id":"b8953653c6cc82bb","x":-1638,"y":1368,"width":396,"height":60,"type":"text","text":"## 데이터 정보 적어둠 "}
 	],
 	"edges":[
 		{"id":"a265bc7cad1ccc50","fromNode":"7a692dcc7fc715b2","fromSide":"right","toNode":"f8fb13c693994d6c","toSide":"left"},
-		{"id":"e935eec102c3288d","fromNode":"c73d2a1baa8279f1","fromSide":"left","toNode":"87354a1b1108cbfc","toSide":"right"}
+		{"id":"e935eec102c3288d","fromNode":"c73d2a1baa8279f1","fromSide":"left","toNode":"87354a1b1108cbfc","toSide":"right"},
+		{"id":"2698976a2ea5da55","fromNode":"87354a1b1108cbfc","fromSide":"bottom","toNode":"847bf89bfbbfd61d","toSide":"top"},
+		{"id":"ef0276cc34e50d3a","fromNode":"7fa106363155ad41","fromSide":"left","toNode":"847bf89bfbbfd61d","toSide":"right"}
 	]
 }
