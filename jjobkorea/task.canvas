@@ -1,8 +1,12 @@
 {
 	"nodes":[
-		{"id":"64371de743de5a54","x":-142,"y":117,"width":250,"height":60,"type":"text","text":""},
-		{"id":"e00277b51fd9de50","x":-360,"y":-180,"width":400,"height":174,"type":"file","file":"Pasted image 20240701172241.png"},
-		{"id":"658caceadfcb8a15","x":-360,"y":-280,"width":332,"height":64,"type":"text","text":"# 파일 구조 흐름 "}
+		{"id":"228369a5b21123c1","x":-685,"y":-160,"width":1173,"height":92,"type":"text","text":"## # 동일한 이름의 클래스가 존재하더라도 다른 패키지에 있다면 충돌없이 사용할 수 있다. "},
+		{"id":"e00277b51fd9de50","x":-685,"y":-68,"width":605,"height":263,"type":"file","file":"Pasted image 20240701172241.png"},
+		{"id":"658caceadfcb8a15","x":-264,"y":-520,"width":332,"height":64,"type":"text","text":"# 파일 구조 흐름 "},
+		{"id":"21e86673aa812830","x":-685,"y":600,"width":668,"height":440,"type":"text","text":"## 🗂️ JJopbKorea (프로젝트)\n\n## 📁 com.jjobKorea\n\n## 📁 com.jjobKorea.Controller\n\n- **📁 com.jjobKorea.Controller.home**\n- **📁com.jjobKorea.Controller.jobSeekerBoard**\n- **📁com.jjobKorea.Controller.companyBoard**\n\n## 📁 com.jjobKorea.Service\n\n## 📁 com.jjobKorea.Mapper"}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"d88b3ddb29fd7dd3","fromNode":"658caceadfcb8a15","fromSide":"bottom","toNode":"228369a5b21123c1","toSide":"top"},
+		{"id":"74c2e80b5e251679","fromNode":"e00277b51fd9de50","fromSide":"bottom","toNode":"21e86673aa812830","toSide":"top"}
+	]
 }
