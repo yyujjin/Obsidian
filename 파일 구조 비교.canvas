@@ -1,21 +1,25 @@
 {
 	"nodes":[
-		{"id":"4f6c38032ac1f377","type":"text","text":"# 나","x":-253,"y":-109,"width":250,"height":116},
-		{"id":"0fc41aa8af6ef685","type":"file","file":"Pasted image 20240701102202.png","x":-328,"y":103,"width":400,"height":57},
 		{"id":"f8fb13c693994d6c","type":"file","file":"Pasted image 20240701102451.png","x":-328,"y":214,"width":400,"height":88},
 		{"id":"d5d032f08bbd449f","type":"text","text":"# 학원","x":-1607,"y":-109,"width":250,"height":60},
-		{"id":"de63ea092964bd8e","type":"file","file":"Pasted image 20240701102202.png","x":-1640,"y":103,"width":400,"height":57},
 		{"id":"3b652bc0dad94537","type":"file","file":"Pasted image 20240701102614.png","x":-328,"y":302,"width":400,"height":366},
 		{"id":"db24bb67c53d678d","type":"text","text":"난 여기 바로 sql 문 적어둠","x":72,"y":420,"width":304,"height":50},
 		{"id":"400769c68fad9ef9","type":"file","file":"Pasted image 20240701102758.png","x":-728,"y":340,"width":400,"height":22},
 		{"id":"a1959c73d665afec","type":"text","text":"난 패키지를 만들어서 그 밑에 넣어줌      ","x":-1040,"y":214,"width":384,"height":50},
-		{"id":"7a692dcc7fc715b2","type":"file","file":"Pasted image 20240701102230.png","x":-1644,"y":820,"width":400,"height":58},
-		{"id":"5ff71bc2305dc9c9","type":"file","file":"Pasted image 20240701102658.png","x":-1644,"y":878,"width":400,"height":156},
-		{"id":"55d4cdc1995bb906","type":"text","text":"sql문이 아닌  경로를 적어둠( )        ","x":-1640,"y":1034,"width":309,"height":50},
 		{"id":"c73d2a1baa8279f1","x":-1640,"y":239,"width":400,"height":189,"type":"file","file":"Pasted image 20240701103025.png"},
-		{"id":"cfc809f63317e173","x":-1682,"y":496,"width":250,"height":60,"type":"text","text":"## 컨트롤 별 x"}
+		{"id":"cfc809f63317e173","x":-1711,"y":179,"width":542,"height":60,"type":"text","text":"## 매퍼 별 (DAO) XML만듬-> 기능 or 페이지별"},
+		{"id":"de63ea092964bd8e","type":"file","file":"Pasted image 20240701102202.png","x":-1764,"y":57,"width":648,"height":92},
+		{"id":"4f6c38032ac1f377","type":"text","text":"# 나","x":-280,"y":-195,"width":250,"height":116},
+		{"id":"0fc41aa8af6ef685","type":"file","file":"Pasted image 20240701102202.png","x":-490,"y":46,"width":725,"height":103},
+		{"id":"87354a1b1108cbfc","x":-2380,"y":231,"width":400,"height":197,"type":"file","file":"Pasted image 20240701103416.png"},
+		{"id":"2e5a3ace6e3b06e0","x":-2380,"y":177,"width":400,"height":54,"type":"text","text":"## 각페이지별 sql 적어둠     "},
+		{"id":"7a692dcc7fc715b2","type":"file","file":"Pasted image 20240701102230.png","x":-1640,"y":560,"width":400,"height":58},
+		{"id":"55d4cdc1995bb906","type":"text","text":"sql문이 아닌  경로를 적어둠( )        ","x":-1636,"y":774,"width":309,"height":50},
+		{"id":"7fa106363155ad41","x":-1636,"y":618,"width":400,"height":154,"type":"file","file":"Pasted image 20240701103507.png"},
+		{"id":"847bf89bfbbfd61d","x":-2233,"y":639,"width":250,"height":60,"type":"text","text":"### 특이사항"}
 	],
 	"edges":[
-		{"id":"a265bc7cad1ccc50","fromNode":"7a692dcc7fc715b2","fromSide":"right","toNode":"f8fb13c693994d6c","toSide":"left"}
+		{"id":"a265bc7cad1ccc50","fromNode":"7a692dcc7fc715b2","fromSide":"right","toNode":"f8fb13c693994d6c","toSide":"left"},
+		{"id":"e935eec102c3288d","fromNode":"c73d2a1baa8279f1","fromSide":"left","toNode":"87354a1b1108cbfc","toSide":"right"}
 	]
 }
