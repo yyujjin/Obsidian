@@ -82,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "파일 구조 비교.canvas",
+                "file": "Pasted image 20240701135537.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +99,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "파일 구조 비교.canvas",
+                "file": "Pasted image 20240701135537.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "파일 구조 비교.canvas"
+                "file": "Pasted image 20240701135537.png"
               }
             }
           }
@@ -163,9 +163,9 @@
                   "state": {
                     "file": "파일 구조 비교.canvas",
                     "viewState": {
-                      "x": 1892.6355537604768,
-                      "y": 4176.516409469347,
-                      "zoom": -0.6666666666666667
+                      "x": -17033.204199678363,
+                      "y": 7260.436936530503,
+                      "zoom": -0.333333333333333
                     }
                   }
                 }
@@ -178,13 +178,14 @@
         "y": -8,
         "width": 976,
         "height": 1056,
-        "maximize": false,
+        "maximize": true,
         "zoom": 0
       }
     ]
   },
   "active": "7f3ef9c53ba2c1c8",
   "lastOpenFiles": [
+    "Pasted image 20240701135537.png",
     "Pasted image 20240701135116.png",
     "Pasted image 20240701121757.png",
     "Pasted image 20240701121746.png",
@@ -195,7 +196,6 @@
     "Pasted image 20240701120349.png",
     "Pasted image 20240701114437.png",
     "Pasted image 20240701114312.png",
-    "Pasted image 20240701113719.png",
     "application.properties",
     "BoardMapper 3.java",
     "mybatis-config 1.xml",
