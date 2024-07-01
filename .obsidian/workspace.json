@@ -15,9 +15,9 @@
               "state": {
                 "file": "파일 구조 비교.canvas",
                 "viewState": {
-                  "x": -405.9204066951777,
-                  "y": 101.47769372984641,
-                  "zoom": -1
+                  "x": -11.683773575248104,
+                  "y": 393.5349581226713,
+                  "zoom": -1.6666666666666665
                 }
               }
             }
@@ -152,6 +152,14 @@
   },
   "active": "7f3ef9c53ba2c1c8",
   "lastOpenFiles": [
+    "Pasted image 20240701102614.png",
+    "Pasted image 20240701102451.png",
+    "Pasted image 20240701102431.png",
+    "BoardMapper 1.java",
+    "BoardMapper.java",
+    "mybatis-config.xml",
+    "Pasted image 20240701102230.png",
+    "Pasted image 20240701102202.png",
     "Pasted image 20240701102126.png",
     "jjobkorea/JJOB.canvas",
     "파일 구조 비교.canvas",
@@ -162,19 +170,12 @@
     "README.md",
     "무제 파일 1.canvas",
     "2024-06-28.md",
-    "BoardMapper.java",
     "BoardMapper 2.java",
-    "BoardMapper 1.java",
     "BoardController.java",
     "image/Pasted image 20240625173007.png",
     "image/Pasted image 20240625172718.png",
     "image/Pasted image 20240625172541.png",
     "image/Pasted image 20240625171119.png",
-    "image/Pasted image 20240625171032.png",
-    "image/Pasted image 20240625165631.png",
-    "image/Pasted image 20240625134053.png",
-    "image/Pasted image 20240625134010.png",
-    "image/Pasted image 20240625133559.png",
     "image",
     "jjobkorea",
     "mvc 패턴 이해하기"

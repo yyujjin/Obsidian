@@ -1,8 +1,16 @@
 {
 	"nodes":[
-		{"id":"4f6c38032ac1f377","x":-253,"y":-53,"width":250,"height":60,"type":"text","text":""},
-		{"id":"d5d032f08bbd449f","x":-1087,"y":-109,"width":250,"height":60,"type":"text","text":"# 학원"},
-		{"id":"fb63c5912dcb2c8c","x":-1087,"y":160,"width":400,"height":180,"type":"file","file":"Pasted image 20240701102126.png"}
+		{"id":"4f6c38032ac1f377","x":-253,"y":-109,"width":250,"height":116,"type":"text","text":"# 나"},
+		{"id":"0fc41aa8af6ef685","type":"file","file":"Pasted image 20240701102202.png","x":-328,"y":103,"width":400,"height":57},
+		{"id":"f8fb13c693994d6c","x":-328,"y":214,"width":400,"height":88,"type":"file","file":"Pasted image 20240701102451.png"},
+		{"id":"d5d032f08bbd449f","x":-1607,"y":-109,"width":250,"height":60,"type":"text","text":"# 학원"},
+		{"id":"de63ea092964bd8e","x":-1640,"y":103,"width":400,"height":57,"type":"file","file":"Pasted image 20240701102202.png"},
+		{"id":"7a692dcc7fc715b2","x":-1640,"y":200,"width":400,"height":58,"type":"file","file":"Pasted image 20240701102230.png"},
+		{"id":"a1959c73d665afec","x":-1040,"y":252,"width":384,"height":50,"type":"text","text":"난 패키지를 만들어서 그 밑에 넣어줌      "},
+		{"id":"3b652bc0dad94537","x":-328,"y":302,"width":400,"height":366,"type":"file","file":"Pasted image 20240701102614.png"},
+		{"id":"db24bb67c53d678d","x":72,"y":420,"width":304,"height":50,"type":"text","text":"난 여기 바로 sql 문 적어둠"}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"a265bc7cad1ccc50","fromNode":"7a692dcc7fc715b2","fromSide":"right","toNode":"f8fb13c693994d6c","toSide":"left"}
+	]
 }
