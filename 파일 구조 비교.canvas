@@ -58,7 +58,7 @@
 		{"id":"a23304238eedfc3f","x":-14055,"y":6680,"width":1149,"height":85,"type":"text","text":"MyBatis에서 \"매퍼 인터페이스의 구현체를 얻어낸다\"는 것은 주로 매퍼 XML 파일에 정의된 SQL 쿼리를 실행할 수 있는 객체를 생성한다는 의미입니다."},
 		{"id":"d9058d6c8af30677","x":-13825,"y":6200,"width":689,"height":245,"type":"text","text":"결론\n세션을 얻는다는 것은 MyBatis에서 데이터베이스와의 연결을 관리하고 SQL 쿼리를 실행하기 위해 필요한 과정입니다. sqlSession.getMapper() 메서드를 사용하여 매퍼 인터페이스의 구현체를 얻어내면, 이후 그 객체를 통해 실제로 데이터베이스와의 상호작용을 수행할 수 있습니다. 따라서 MyBatis를 사용하여 데이터베이스와 통신할 때는 세션을 얻는 것이 필수적인 과정입니다.\n\n\n\n"},
 		{"id":"0d59caaca330c95f","x":-14055,"y":6020,"width":836,"height":65,"type":"text","text":"## MyBatis는 세션을 매퍼에서 얻어내어 SQL 쿼리를 실행합니다."},
-		{"id":"d10302a183eea8ba","x":-13440,"y":7760,"width":250,"height":60,"type":"text","text":"BoardMapper 인터페이스를 @Autowired를 통해 주입받고 있습니다. 이는 Spring에서 관리하는 빈으로 등록되어 있는 BoardMapper의 구현체(Proxy 객체)가 필요할 때마다 자동으로 제공됩니다."}
+		{"id":"d10302a183eea8ba","x":-13440,"y":7760,"width":680,"height":160,"type":"text","text":"BoardMapper 인터페이스를 @Autowired를 통해 주입받고 있습니다. 이는 Spring에서 관리하는 빈으로 등록되어 있는 BoardMapper의 구현체(Proxy 객체)가 필요할 때마다 자동으로 제공됩니다."}
 	],
 	"edges":[
 		{"id":"d234dbd9f2da445e","fromNode":"25bba6b1d5344bb1","fromSide":"right","toNode":"d6330e68ddcf5bc8","toSide":"left"},
