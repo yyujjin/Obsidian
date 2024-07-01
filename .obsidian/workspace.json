@@ -13,11 +13,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "jjobkorea/JJOB.canvas",
+                "file": "파일 구조 비교.canvas",
                 "viewState": {
-                  "x": -7877,
-                  "y": -565,
-                  "zoom": -4
+                  "x": -405.9204066951777,
+                  "y": 101.47769372984641,
+                  "zoom": -1
                 }
               }
             }
@@ -72,7 +72,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "87835c895c0434e9",
@@ -88,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "jjobkorea/JJOB.canvas",
+                "file": "파일 구조 비교.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "jjobkorea/JJOB.canvas",
+                "file": "파일 구조 비교.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "jjobkorea/JJOB.canvas"
+                "file": "파일 구조 비교.canvas"
               }
             }
           }
@@ -151,14 +152,15 @@
   },
   "active": "7f3ef9c53ba2c1c8",
   "lastOpenFiles": [
+    "Pasted image 20240701102126.png",
+    "jjobkorea/JJOB.canvas",
+    "파일 구조 비교.canvas",
     "mvc 패턴 이해하기/mvc 패턴 흐름 이해하기.canvas",
     "image/2024-06-19.md",
     "image/2024-06-17.md",
-    "jjobkorea/JJOB.canvas",
     "jjobkorea/Pasted image 20240625113731.png",
     "README.md",
     "무제 파일 1.canvas",
-    "무제 파일.canvas",
     "2024-06-28.md",
     "BoardMapper.java",
     "BoardMapper 2.java",

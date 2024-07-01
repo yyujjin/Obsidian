@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"4f6c38032ac1f377","x":-253,"y":-53,"width":250,"height":60,"type":"text","text":""},
+		{"id":"d5d032f08bbd449f","x":-1087,"y":-109,"width":250,"height":60,"type":"text","text":"# 학원"},
+		{"id":"fb63c5912dcb2c8c","x":-1087,"y":160,"width":400,"height":180,"type":"file","file":"Pasted image 20240701102126.png"}
+	],
+	"edges":[]
+}
