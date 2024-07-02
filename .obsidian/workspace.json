@@ -28,11 +28,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "jjobkorea/task.canvas",
+                "file": "파일 구조 비교.canvas",
                 "viewState": {
-                  "x": 27.52087327748329,
-                  "y": 457.0672693186319,
-                  "zoom": -1.1697745500591286
+                  "x": -2125.718692526598,
+                  "y": 1912.3495551064416,
+                  "zoom": -0.8317332360397782
                 }
               }
             }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "jjobkorea/task.canvas",
+                "file": "파일 구조 비교.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "jjobkorea/task.canvas",
+                "file": "파일 구조 비교.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "jjobkorea/task.canvas"
+                "file": "파일 구조 비교.canvas"
               }
             }
           }
@@ -165,12 +165,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "be43484f0935c54c",
+  "active": "8c64fb69ae159239",
   "lastOpenFiles": [
-    "jjobkorea/JJOB.canvas",
-    "jjobkorea/task.canvas",
     "무제 파일.canvas",
     "무제 파일.md",
+    "jjobkorea/task.canvas",
+    "jjobkorea/JJOB.canvas",
     "Pasted image 20240701172241.png",
     "파일 구조 비교.canvas",
     "Pasted image 20240701143354.png",

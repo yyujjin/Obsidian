@@ -43,7 +43,7 @@
 		{"id":"a81f9f2532df8afa","type":"text","text":"서로 연결하니까 매퍼가 동작하면 바로 xml로 연결되는거지","x":-8303,"y":4141,"width":250,"height":60},
 		{"id":"8c7e8201c67ac5f4","type":"text","text":"# 내가 설정한 공장에서 세션을 받아오는게 아니라/.","x":-3407,"y":2440,"width":727,"height":141},
 		{"id":"db02b4e0931d7345","type":"file","file":"Pasted image 20240701121429.png","x":-11400,"y":5080,"width":400,"height":143},
-		{"id":"e1e851446db3111d","type":"file","file":"Pasted image 20240701121529.png","x":-11400,"y":5240,"width":400,"height":101},
+		{"id":"e1e851446db3111d","type":"file","file":"Pasted image 20240701121529.png","x":-11400,"y":5240,"width":398,"height":101},
 		{"id":"abbc25c5af53b973","type":"file","file":"Pasted image 20240701121746.png","x":-11620,"y":4680,"width":400,"height":277},
 		{"id":"8a5f01e44cda6a21","type":"file","file":"Pasted image 20240701121757.png","x":-11220,"y":4705,"width":400,"height":228},
 		{"id":"892211040f7cc418","type":"text","text":"# `private SqlSession sqlSession;`을 사용하여 직접 `SqlSession`을 멤버 변수로 선언하고, `sqlSession.getMapper(BoardDAO.class)`를 통해 `BoardDAO` 인터페이스의 구현체를 얻어내는 방식과","x":-14055,"y":5040,"width":895,"height":175},
@@ -57,20 +57,20 @@
 		{"id":"4101641a2232528d","type":"text","text":"import org.apache.ibatis.session.SqlSessionFactory;\nimport org.mybatis.spring.SqlSessionFactoryBean;\nimport org.mybatis.spring.SqlSessionTemplate;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.context.ApplicationContext;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.core.io.support.PathMatchingResourcePatternResolver;\nimport javax.sql.DataSource;\n\n@Configuration\npublic class MyBatisConfig {\n\n    @Autowired\n    private ApplicationContext applicationContext;\n\n    @Bean\n    public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {\n        SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();\n        factoryBean.setDataSource(dataSource);\n        factoryBean.setMapperLocations(applicationContext.getResources(\"classpath:/mapper/**/*Mapper.xml\"));\n        factoryBean.setTypeAliasesPackage(\"com.board.domain\");\n        factoryBean.setConfiguration(mybatisConfig());\n        return factoryBean.getObject();\n    }\n\n    @Bean\n    public SqlSessionTemplate sqlSession(SqlSessionFactory sqlSessionFactory) {\n        return new SqlSessionTemplate(sqlSessionFactory);\n    }\n\n    @Bean\n    public org.apache.ibatis.session.Configuration mybatisConfig() {\n        return new org.apache.ibatis.session.Configuration();\n    }\n\n}","x":-12160,"y":7000,"width":1083,"height":1010},
 		{"id":"064333877dffae09","type":"file","file":"Pasted image 20240701135116.png","x":1822,"y":3992,"width":892,"height":328},
 		{"id":"2449353c9e8ceaca","type":"text","text":"# MyBatis가 내부적으로 `SqlSessionTemplate`을 사용하여 데이터베이스 연산을 수행","x":-17686,"y":9301,"width":1486,"height":119},
-		{"id":"97399d0cd50e1aba","x":-16200,"y":7480,"width":620,"height":168,"type":"file","file":"Pasted image 20240701143321.png"},
-		{"id":"9992ccd4e5bf7b9e","x":-16180,"y":7700,"width":1078,"height":140,"type":"file","file":"Pasted image 20240701143354.png"}
+		{"id":"97399d0cd50e1aba","type":"file","file":"Pasted image 20240701143321.png","x":-16200,"y":7480,"width":620,"height":168},
+		{"id":"9992ccd4e5bf7b9e","type":"file","file":"Pasted image 20240701143354.png","x":-16180,"y":7700,"width":1078,"height":140}
 	],
 	"edges":[
-		{"id":"d234dbd9f2da445e","fromNode":"25bba6b1d5344bb1","fromSide":"right","toNode":"d6330e68ddcf5bc8","toSide":"left"},
-		{"id":"7d61fdd5a2930bc9","fromNode":"d6330e68ddcf5bc8","fromSide":"right","toNode":"c107cff926db5ee5","toSide":"left"},
-		{"id":"3e92eab2c856b8be","fromNode":"b414fe8f20e1a0e4","fromSide":"right","toNode":"560d552766c0de80","toSide":"left"},
-		{"id":"1eb8bb73ceb9f687","fromNode":"c107cff926db5ee5","fromSide":"right","toNode":"4e901332524f9d15","toSide":"left"},
-		{"id":"b2cc31c692723fc0","fromNode":"57efcd4375083210","fromSide":"right","toNode":"4e901332524f9d15","toSide":"left"},
 		{"id":"dab95f5e6c4fa0a6","fromNode":"afff88a536386b87","fromSide":"bottom","toNode":"5d5cae43b78d04a7","toSide":"bottom"},
 		{"id":"ab75b8865c2d5aaa","fromNode":"fc30b992740297d1","fromSide":"bottom","toNode":"fd4d4f650e8a2714","toSide":"top"},
 		{"id":"0f55a040b82e38b8","fromNode":"b65ab50798bc21ea","fromSide":"left","toNode":"2911664801b155d9","toSide":"right"},
 		{"id":"7b1d08f46c8c6eb0","fromNode":"d9058d6c8af30677","fromSide":"bottom","toNode":"a23304238eedfc3f","toSide":"top"},
 		{"id":"3b0a8944d9d7f232","fromNode":"a552d884008b6176","fromSide":"right","toNode":"7cc6771f40b31432","toSide":"left"},
-		{"id":"141c27ed1ed422c3","fromNode":"7cc6771f40b31432","fromSide":"right","toNode":"4101641a2232528d","toSide":"top"}
+		{"id":"141c27ed1ed422c3","fromNode":"7cc6771f40b31432","fromSide":"right","toNode":"4101641a2232528d","toSide":"top"},
+		{"id":"d234dbd9f2da445e","fromNode":"25bba6b1d5344bb1","fromSide":"right","toNode":"d6330e68ddcf5bc8","toSide":"left"},
+		{"id":"7d61fdd5a2930bc9","fromNode":"d6330e68ddcf5bc8","fromSide":"right","toNode":"c107cff926db5ee5","toSide":"left"},
+		{"id":"3e92eab2c856b8be","fromNode":"b414fe8f20e1a0e4","fromSide":"right","toNode":"560d552766c0de80","toSide":"left"},
+		{"id":"1eb8bb73ceb9f687","fromNode":"c107cff926db5ee5","fromSide":"right","toNode":"4e901332524f9d15","toSide":"left"},
+		{"id":"b2cc31c692723fc0","fromNode":"57efcd4375083210","fromSide":"right","toNode":"4e901332524f9d15","toSide":"left"}
 	]
 }
