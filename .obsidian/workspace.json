@@ -21,8 +21,24 @@
                 }
               }
             }
+          },
+          {
+            "id": "8c64fb69ae159239",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "무제 파일.canvas",
+                "viewState": {
+                  "x": 741.5,
+                  "y": 740,
+                  "zoom": 0
+                }
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "jjobkorea/task.canvas",
+                "file": "무제 파일.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "jjobkorea/task.canvas",
+                "file": "무제 파일.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "jjobkorea/task.canvas"
+                "file": "무제 파일.canvas"
               }
             }
           }
@@ -149,11 +165,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "35e038f6cd5d3478",
+  "active": "8c64fb69ae159239",
   "lastOpenFiles": [
+    "무제 파일.md",
+    "무제 파일.canvas",
+    "jjobkorea/task.canvas",
     "Pasted image 20240701172241.png",
     "jjobkorea/JJOB.canvas",
-    "jjobkorea/task.canvas",
     "파일 구조 비교.canvas",
     "Pasted image 20240701143354.png",
     "Pasted image 20240701143321.png",
@@ -164,7 +182,6 @@
     "Pasted image 20240701121529.png",
     "Pasted image 20240701121429.png",
     "Pasted image 20240701120744.png",
-    "Pasted image 20240701120715.png",
     "application.properties",
     "BoardMapper 3.java",
     "mybatis-config 1.xml",
