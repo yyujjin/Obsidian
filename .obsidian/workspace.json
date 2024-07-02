@@ -30,9 +30,9 @@
               "state": {
                 "file": "jjobkorea/task.canvas",
                 "viewState": {
-                  "x": -120.09620719996225,
-                  "y": 290.54401075598827,
-                  "zoom": -1.836441216725795
+                  "x": 27.52087327748329,
+                  "y": 457.0672693186319,
+                  "zoom": -1.1697745500591286
                 }
               }
             }
@@ -165,12 +165,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "8c64fb69ae159239",
+  "active": "be43484f0935c54c",
   "lastOpenFiles": [
     "jjobkorea/JJOB.canvas",
+    "jjobkorea/task.canvas",
     "무제 파일.canvas",
     "무제 파일.md",
-    "jjobkorea/task.canvas",
     "Pasted image 20240701172241.png",
     "파일 구조 비교.canvas",
     "Pasted image 20240701143354.png",
