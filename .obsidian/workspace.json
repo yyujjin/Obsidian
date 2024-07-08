@@ -32,7 +32,7 @@
                 "viewState": {
                   "x": -3238.782178580803,
                   "y": 1844.4605211489506,
-                  "zoom": -0.3333333333333332
+                  "zoom": -1.333333333333333
                 }
               }
             }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20240701110900.png",
+                "file": "파일 구조 비교.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20240701110900.png",
+                "file": "파일 구조 비교.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20240701110900.png"
+                "file": "파일 구조 비교.canvas"
               }
             }
           }
