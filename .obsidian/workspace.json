@@ -13,32 +13,16 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "jjobkorea/task.canvas",
+                "file": "채점프로그램 코드분석.canvas",
                 "viewState": {
-                  "x": 69.40953367102688,
-                  "y": 346.468246809521,
-                  "zoom": -0.6666666666666667
-                }
-              }
-            }
-          },
-          {
-            "id": "8c64fb69ae159239",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "파일 구조 비교.canvas",
-                "viewState": {
-                  "x": -3238.782178580803,
-                  "y": 1844.4605211489506,
-                  "zoom": -1.333333333333333
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
                 }
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "파일 구조 비교.canvas",
+                "file": "채점프로그램 코드분석.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "파일 구조 비교.canvas",
+                "file": "채점프로그램 코드분석.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "파일 구조 비교.canvas"
+                "file": "채점프로그램 코드분석.canvas"
               }
             }
           }
@@ -165,23 +149,24 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "8c64fb69ae159239",
+  "active": "35e038f6cd5d3478",
   "lastOpenFiles": [
-    "무제 파일.canvas",
     "무제 파일.md",
+    "채점프로그램 코드분석.canvas",
     "jjobkorea/task.canvas",
-    "jjobkorea/JJOB.canvas",
-    "Pasted image 20240701172241.png",
     "파일 구조 비교.canvas",
-    "Pasted image 20240701143354.png",
-    "Pasted image 20240701143321.png",
-    "Pasted image 20240701135537.png",
-    "Pasted image 20240701135116.png",
-    "Pasted image 20240701121757.png",
-    "Pasted image 20240701121746.png",
-    "Pasted image 20240701121529.png",
-    "Pasted image 20240701121429.png",
-    "Pasted image 20240701120744.png",
+    "image/파일 구조 비교.canvas",
+    "Pasted image 20240701110133.png",
+    "image/Pasted image 20240701143354.png",
+    "image/Pasted image 20240701143321.png",
+    "image/Pasted image 20240701114437.png",
+    "image/Pasted image 20240701114312.png",
+    "image/Pasted image 20240701110133.png",
+    "image/Pasted image 20240701110053.png",
+    "image/Pasted image 20240701103507.png",
+    "image/Pasted image 20240701103416.png",
+    "image/Pasted image 20240701172241.png",
+    "jjobkorea/JJOB.canvas",
     "application.properties",
     "BoardMapper 3.java",
     "mybatis-config 1.xml",
