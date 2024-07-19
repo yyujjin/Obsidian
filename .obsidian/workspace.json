@@ -13,16 +13,29 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "채점프로그램/채점프로그램 코드분석.canvas",
+                "file": "채점프로그램/결과보기 화면.canvas",
                 "viewState": {
-                  "x": 8697.352054804285,
-                  "y": 1909.7796722064184,
-                  "zoom": -0.9999999999999991
+                  "x": 222,
+                  "y": -127,
+                  "zoom": 0
                 }
               }
             }
+          },
+          {
+            "id": "58d124626bf4ba56",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "채점프로그램/결과 보기 기능 구현.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -72,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "87835c895c0434e9",
@@ -88,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "채점프로그램/채점프로그램 코드분석.canvas",
+                "file": "채점프로그램/결과 보기 기능 구현.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "채점프로그램/채점프로그램 코드분석.canvas",
+                "file": "채점프로그램/결과 보기 기능 구현.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "채점프로그램/채점프로그램 코드분석.canvas"
+                "file": "채점프로그램/결과 보기 기능 구현.md"
               }
             }
           }
@@ -149,12 +163,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "be43484f0935c54c",
+  "active": "58d124626bf4ba56",
   "lastOpenFiles": [
+    "채점프로그램/결과보기 화면.canvas",
+    "채점프로그램/결과 보기 기능 구현.md",
+    "채점프로그램/채점프로그램 언니 코드분석.canvas",
     "채점프로그램",
     "Pasted image 20240718144448.png",
-    "무제 파일.md",
-    "채점프로그램/채점프로그램 코드분석.canvas",
     "jjobkorea/task.canvas",
     "파일 구조 비교.canvas",
     "image/파일 구조 비교.canvas",
@@ -182,7 +197,6 @@
     "README.md",
     "무제 파일 1.canvas",
     "2024-06-28.md",
-    "BoardController.java",
-    "image"
+    "BoardController.java"
   ]
 }
