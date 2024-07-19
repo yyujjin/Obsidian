@@ -13,11 +13,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "채점프로그램 코드분석.canvas",
+                "file": "채점프로그램/채점프로그램 코드분석.canvas",
                 "viewState": {
-                  "x": 1935.4535953283919,
-                  "y": 371.49157914483004,
-                  "zoom": -1.7837597027013057
+                  "x": 8697.352054804285,
+                  "y": 1909.7796722064184,
+                  "zoom": -0.9999999999999991
                 }
               }
             }
@@ -88,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "채점프로그램 코드분석.canvas",
+                "file": "채점프로그램/채점프로그램 코드분석.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "채점프로그램 코드분석.canvas",
+                "file": "채점프로그램/채점프로그램 코드분석.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "채점프로그램 코드분석.canvas"
+                "file": "채점프로그램/채점프로그램 코드분석.canvas"
               }
             }
           }
@@ -149,11 +149,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "35e038f6cd5d3478",
+  "active": "be43484f0935c54c",
   "lastOpenFiles": [
+    "채점프로그램",
     "Pasted image 20240718144448.png",
     "무제 파일.md",
-    "채점프로그램 코드분석.canvas",
+    "채점프로그램/채점프로그램 코드분석.canvas",
     "jjobkorea/task.canvas",
     "파일 구조 비교.canvas",
     "image/파일 구조 비교.canvas",
@@ -166,7 +167,6 @@
     "image/Pasted image 20240701110053.png",
     "image/Pasted image 20240701103507.png",
     "image/Pasted image 20240701103416.png",
-    "image/Pasted image 20240701172241.png",
     "jjobkorea/JJOB.canvas",
     "application.properties",
     "BoardMapper 3.java",
