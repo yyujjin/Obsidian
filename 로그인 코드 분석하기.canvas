@@ -32,7 +32,8 @@
 		{"id":"7a97504012650e99","x":1950,"y":981,"width":381,"height":99,"type":"text","text":"# Refactory 제안\n\n유저, 기업 테이블 분리 생성"},
 		{"id":"f0d60c2c64cb852e","x":2331,"y":1020,"width":250,"height":60,"type":"text","text":"- 1 => 기업\n- -1 => 유저"},
 		{"id":"878edb11d0ab4b0e","x":3149,"y":1080,"width":127,"height":127,"type":"file","file":"Pasted image 20240724171912.png"},
-		{"id":"a42d7db7c7aa60b1","type":"file","file":"Pasted image 20240724171912.png","x":4632,"y":-3060,"width":127,"height":127}
+		{"id":"a42d7db7c7aa60b1","type":"file","file":"Pasted image 20240724171912.png","x":4632,"y":-3060,"width":127,"height":127},
+		{"id":"1474c7992bfc7c69","x":2172,"y":1560,"width":883,"height":270,"type":"text","text":"```java\n// 입력된 비밀번호가 데이터베이스에 저장된 비밀번호와 일치하는지 확인\n\nif (!foundUser.getMemPwd().equals(param.get(\"memPwd\"))) {\n\nlog.info(\"비밀번호가 일치하지 않습니다.\");\n\nreturn \"redirect:login?error=true\";\n\n}\n```"}
 	],
 	"edges":[
 		{"id":"dbe65268fcf3c488","fromNode":"c43dc24825c78d05","fromSide":"right","toNode":"71dc42c610125534","toSide":"left"},
@@ -46,6 +47,7 @@
 		{"id":"d93539a3ad270db0","fromNode":"0ea6e9ebad193499","fromSide":"right","toNode":"1b6a4bd66b807b37","toSide":"left"},
 		{"id":"e259fdc495e90f93","fromNode":"5ee8548fa4e38cee","fromSide":"bottom","toNode":"95deb3e69c07d39e","toSide":"top"},
 		{"id":"44bcefe65dcbf735","fromNode":"95deb3e69c07d39e","fromSide":"bottom","toNode":"0b595fb8c1a6f68b","toSide":"top"},
-		{"id":"5215cdb0ebd4d1b3","fromNode":"0b595fb8c1a6f68b","fromSide":"right","toNode":"c28dc3f526e0120f","toSide":"left"}
+		{"id":"5215cdb0ebd4d1b3","fromNode":"0b595fb8c1a6f68b","fromSide":"right","toNode":"c28dc3f526e0120f","toSide":"left"},
+		{"id":"2f540c57f27aa111","fromNode":"0b595fb8c1a6f68b","fromSide":"bottom","toNode":"1474c7992bfc7c69","toSide":"top"}
 	]
 }
