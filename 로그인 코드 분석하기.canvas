@@ -27,7 +27,8 @@
 		{"id":"5ee8548fa4e38cee","x":2300,"y":218,"width":625,"height":220,"type":"text","text":"```java\nif (user.isEmpty()) {\n\n\n//만약 받아온 데이터가 없으면  로그인 페이지로 리다이렉트 \nreturn \"redirect:login?error=true\";\n\n}\n```"},
 		{"id":"0b595fb8c1a6f68b","x":1950,"y":1080,"width":1326,"height":241,"type":"text","text":"```java\nif ((loginType.equals(\"individual\") && foundUser.getUserType() != -1) || (loginType.equals(\"enterprise\") && foundUser.getUserType() != 1)) {\n\nlog.info(\"로그인 유형이 일치하지 않습니다.\");\n\nreturn \"redirect:login?error=true\";\n\n}\n```"},
 		{"id":"227af17cd18a14e3","type":"text","text":"데이터 list로  받아와서 넘기기   ","x":3320,"y":-660,"width":322,"height":60},
-		{"id":"95deb3e69c07d39e","x":2328,"y":600,"width":570,"height":120,"type":"text","text":"```java\n//유저 전체 리스트 중에 0번째 인덱스에 있는 유저 정보를 저장함 \nMemDTO foundUser = user.get(0);\n```"}
+		{"id":"95deb3e69c07d39e","x":2328,"y":600,"width":570,"height":120,"type":"text","text":"```java\n//유저 전체 리스트 중에 0번째 인덱스에 있는 유저 정보를 저장함 \nMemDTO foundUser = user.get(0);\n```"},
+		{"id":"c28dc3f526e0120f","x":3475,"y":1171,"width":880,"height":60,"type":"text","text":"`jdbcTemplate.query()` 메서드에서 `-1`이 넘어오는 경우는 일반적으로 쿼리 실행 결과가 없을 때"}
 	],
 	"edges":[
 		{"id":"dbe65268fcf3c488","fromNode":"c43dc24825c78d05","fromSide":"right","toNode":"71dc42c610125534","toSide":"left"},
@@ -40,6 +41,7 @@
 		{"id":"499bd62cc29988f1","fromNode":"5ee8548fa4e38cee","fromSide":"right","toNode":"0ea6e9ebad193499","toSide":"left"},
 		{"id":"d93539a3ad270db0","fromNode":"0ea6e9ebad193499","fromSide":"right","toNode":"1b6a4bd66b807b37","toSide":"left"},
 		{"id":"e259fdc495e90f93","fromNode":"5ee8548fa4e38cee","fromSide":"bottom","toNode":"95deb3e69c07d39e","toSide":"top"},
-		{"id":"44bcefe65dcbf735","fromNode":"95deb3e69c07d39e","fromSide":"bottom","toNode":"0b595fb8c1a6f68b","toSide":"top"}
+		{"id":"44bcefe65dcbf735","fromNode":"95deb3e69c07d39e","fromSide":"bottom","toNode":"0b595fb8c1a6f68b","toSide":"top"},
+		{"id":"5215cdb0ebd4d1b3","fromNode":"0b595fb8c1a6f68b","fromSide":"right","toNode":"c28dc3f526e0120f","toSide":"left"}
 	]
 }
