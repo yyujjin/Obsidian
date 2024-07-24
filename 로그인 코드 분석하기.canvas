@@ -21,7 +21,7 @@
 		{"id":"49c6403f319aac62","x":3920,"y":-754,"width":359,"height":308,"type":"text","text":"# Refactory 제안 \n- checkUser 메서드 생성해서 아이디, 비번만 넘겨서\n- 불일치하면 핸들링하는 코드 쓰고\n- 일치하면 아이디만 가져오는 코드작성"},
 		{"id":"8fc3aa15e94bf142","x":1280,"y":-1136,"width":489,"height":50,"type":"text","text":"### 폼 작성하고 버튼 누르면 실행됨 "},
 		{"id":"3c962943a9740d7c","x":-6080,"y":-1750,"width":459,"height":280,"type":"text","text":"# 개선해야 할 사항\n- 빈 필드 주입 말고 생성자 주입으로 "},
-		{"id":"dda97059d4fd693a","x":115,"y":-440,"width":585,"height":220,"type":"text","text":"# 회원관리\n- 기업\n- 개인이랑 enum 생성하고\n- "}
+		{"id":"dda97059d4fd693a","x":3920,"y":-446,"width":520,"height":266,"type":"text","text":"# 회원관리\n- 기업\n- 개인이랑 enum 생성하고\n- 유저 관리 서비스 만들고\n- dto를 유저, 기업 따로 만들고\n- 그 안에서  타입 구분해서 해당 dto 실행하는 식으로 \n- "}
 	],
 	"edges":[
 		{"id":"dbe65268fcf3c488","fromNode":"c43dc24825c78d05","fromSide":"right","toNode":"71dc42c610125534","toSide":"left"},
