@@ -23,10 +23,11 @@
 		{"id":"f125be6adfc80906","type":"text","text":"## 로그인 기능","x":130,"y":-1641,"width":276,"height":50},
 		{"id":"037fbe32889855e4","type":"text","text":"@PostMapping(\"/login_yn\")\r\n    public String login_yn(@RequestParam HashMap<String, String> param, HttpServletRequest request, Model model) {\r\n        log.info(\"@# login_yn\");\r\n        String loginType = param.get(\"loginType\"); // 사용자 유형(개인/기업)\r\n        ArrayList<MemDTO> user = service.loginYn(param);\r\n\r\n        if (user.isEmpty()) {\r\n            log.info(\"사용자를 찾을 수 없습니다.\");\r\n            return \"redirect:login?error=true\";\r\n        }\r\n\r\n        MemDTO foundUser = user.get(0);\r\n\r\n        // 사용자 유형이 일치하는지 확인\r\n        if ((loginType.equals(\"individual\") && foundUser.getUserType() != -1) || (loginType.equals(\"enterprise\") && foundUser.getUserType() != 1)) {\r\n            log.info(\"로그인 유형이 일치하지 않습니다.\");\r\n            return \"redirect:login?error=true\";\r\n        }\r\n\r\n        // 입력된 비밀번호가 데이터베이스에 저장된 비밀번호와 일치하는지 확인\r\n        if (!foundUser.getMemPwd().equals(param.get(\"memPwd\"))) {\r\n            log.info(\"비밀번호가 일치하지 않습니다.\");\r\n            return \"redirect:login?error=true\";\r\n        }\r\n\r\n        // 세션에 사용자 정보 저장\r\n        HttpSession session = request.getSession();\r\n        session.setAttribute(\"user\", foundUser);\r\n        log.info(\"사용자 세션 저장 완료: \" + foundUser.getMemId());\r\n        return \"redirect:main\";\r\n    }\r\n","x":680,"y":-1108,"width":250,"height":60},
 		{"id":"8fc3aa15e94bf142","type":"text","text":"### 폼 작성하고 버튼 누르면 실행됨 ","x":1340,"y":-1078,"width":489,"height":50},
-		{"id":"5ee8548fa4e38cee","x":2288,"y":200,"width":625,"height":260,"type":"text","text":"```java\nif (user.isEmpty()) {\n\n\n//만약 받아온 데이터가 없으면  로그인 페이지로 리다이렉트 \nreturn \"redirect:login?error=true\";\n\n}\n```"},
-		{"id":"0ea6e9ebad193499","x":3420,"y":200,"width":935,"height":255,"type":"text","text":"```java\nconst urlParams = new URLSearchParams(window.location.search);\n\n\n//만약 파라미터에 \nif (urlParams.has('error')) {\n\nalert('아이디 또는 비밀번호가 일치하지 않습니다. 다시 확인 후 입력해주시기 바랍니다.');\n\n}\n```"},
+		{"id":"0ea6e9ebad193499","x":3420,"y":200,"width":935,"height":255,"type":"text","text":"```java\nconst urlParams = new URLSearchParams(window.location.search);\n\n\n//만약 파라미터에 error를 가지고 있으면 알림창 띄워라.\nif (urlParams.has('error')) {\n\nalert('아이디 또는 비밀번호가 일치하지 않습니다. 다시 확인 후 입력해주시기 바랍니다.');\n\n}\n```"},
 		{"id":"850cdead01562c3a","x":3420,"y":131,"width":385,"height":69,"type":"text","text":"# login.jsp (script 부분)"},
-		{"id":"1b6a4bd66b807b37","x":4600,"y":200,"width":560,"height":255,"type":"text","text":"#### URLSearchParams\n\nhttps://jake-seo-dev.tistory.com/159\n\n```javaScript\nconst params = new URLSearchParams(\"foo=1&bar=2\");\nconsole.log(params.get(\"foo\")); // 1\nconsole.log(params.get(\"bar\")); // 2\n```\n\n"}
+		{"id":"1b6a4bd66b807b37","x":4600,"y":200,"width":560,"height":255,"type":"text","text":"#### URLSearchParams\n\nhttps://jake-seo-dev.tistory.com/159\n\n```javaScript\nconst params = new URLSearchParams(\"foo=1&bar=2\");\nconsole.log(params.get(\"foo\")); // 1\nconsole.log(params.get(\"bar\")); // 2\n```\n\n"},
+		{"id":"5ee8548fa4e38cee","x":2300,"y":218,"width":625,"height":220,"type":"text","text":"```java\nif (user.isEmpty()) {\n\n\n//만약 받아온 데이터가 없으면  로그인 페이지로 리다이렉트 \nreturn \"redirect:login?error=true\";\n\n}\n```"},
+		{"id":"95deb3e69c07d39e","x":2355,"y":560,"width":515,"height":80,"type":"text","text":"```java\nMemDTO foundUser = user.get(0);\n```"}
 	],
 	"edges":[
 		{"id":"dbe65268fcf3c488","fromNode":"c43dc24825c78d05","fromSide":"right","toNode":"71dc42c610125534","toSide":"left"},
@@ -37,6 +38,7 @@
 		{"id":"22ceb27edc44182a","fromNode":"3e993d14296bbd08","fromSide":"bottom","toNode":"0f128f8dd6b42b11","toSide":"top"},
 		{"id":"7c23f8b0550e12bf","fromNode":"71dc42c610125534","fromSide":"bottom","toNode":"5ee8548fa4e38cee","toSide":"top"},
 		{"id":"499bd62cc29988f1","fromNode":"5ee8548fa4e38cee","fromSide":"right","toNode":"0ea6e9ebad193499","toSide":"left"},
-		{"id":"d93539a3ad270db0","fromNode":"0ea6e9ebad193499","fromSide":"right","toNode":"1b6a4bd66b807b37","toSide":"left"}
+		{"id":"d93539a3ad270db0","fromNode":"0ea6e9ebad193499","fromSide":"right","toNode":"1b6a4bd66b807b37","toSide":"left"},
+		{"id":"e259fdc495e90f93","fromNode":"5ee8548fa4e38cee","fromSide":"bottom","toNode":"95deb3e69c07d39e","toSide":"top"}
 	]
 }
