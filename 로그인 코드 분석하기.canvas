@@ -71,7 +71,7 @@
 		{"id":"a40462c5f795f6ae","x":4560,"y":10983,"width":403,"height":76,"type":"text","text":"# MemSignupService"},
 		{"id":"7989fbba727b7604","x":5520,"y":10531,"width":1008,"height":208,"type":"text","text":"## @Transactional 어노테이션\n\n@Transactional은 클래스나 메서드에 붙여줄 경우, 해당 범위 내 메서드가 트랜잭션이 되도록 보장해준다.\n\n**선언적 트랜잭션**이라고도 하는데, 직접 객체를 만들 필요 없이 선언만으로도 관리를 용이하게 해주기 때문.\n\nhttps://kafcamus.tistory.com/30"},
 		{"id":"41b21b18e55a7aba","x":3800,"y":11034,"width":250,"height":50,"type":"text","text":"회원 가입 form이 전달됨"},
-		{"id":"98c0d42f6da43a35","x":6471,"y":13360,"width":709,"height":440,"type":"text","text":"# MemDTO 사용이 안되고 있음 "}
+		{"id":"98c0d42f6da43a35","x":7640,"y":12116,"width":709,"height":244,"type":"text","text":"# MemDTO 사용이 안되고 있다고 보여짐\n\n - MyBatis를 사용하지 않고 JDBC Template을 사용하여 데이터베이스에 접근\n- `jdbcTemplate` 객체를 사용하여 SQL 쿼리를 직접 작성하고 실행"}
 	],
 	"edges":[
 		{"id":"dbe65268fcf3c488","fromNode":"c43dc24825c78d05","fromSide":"right","toNode":"71dc42c610125534","toSide":"left"},
@@ -96,6 +96,7 @@
 		{"id":"aa8c46f477004dbf","fromNode":"f7f6507539210a2d","fromSide":"bottom","toNode":"c28a5b2c82fd3df3","toSide":"top"},
 		{"id":"16c1a4df904ce08e","fromNode":"c28a5b2c82fd3df3","fromSide":"bottom","toNode":"efb0177658fd505c","toSide":"top"},
 		{"id":"6497ec507b3b80c4","fromNode":"c877ab588eb9c886","fromSide":"top","toNode":"7989fbba727b7604","toSide":"bottom"},
-		{"id":"72fc91a6bb58d59b","fromNode":"efb0177658fd505c","fromSide":"right","toNode":"a40462c5f795f6ae","toSide":"left"}
+		{"id":"72fc91a6bb58d59b","fromNode":"efb0177658fd505c","fromSide":"right","toNode":"a40462c5f795f6ae","toSide":"left"},
+		{"id":"8eea4bec7ec960be","fromNode":"c877ab588eb9c886","fromSide":"right","toNode":"98c0d42f6da43a35","toSide":"left"}
 	]
 }
