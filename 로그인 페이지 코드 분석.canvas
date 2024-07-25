@@ -1,12 +1,5 @@
 {
 	"nodes":[
-		{"id":"8f652359d2d24010","type":"text","text":"# sql \n```sql\nSELECT tb.memId, tb.memPwd, tb.memName, tb.cpId, cp.companyType, cp.companyRegistrationNum, cp.companyRepresentativeName, cp.companyName, cp.companyAddr, cp.companyBusinessRegistration AS companyBusinessRegistration, tb.userType FROM signup_tb tb\nLEFT JOIN signup_cp cp\nON tb.cpId = cp.id\nWHERE tb.memId = ?\";\n```","x":-180,"y":-1750,"width":2081,"height":252},
-		{"id":"121173966b1ce4df","type":"file","file":"Pasted image 20240724225741.png","x":-180,"y":-1887,"width":400,"height":104},
-		{"id":"c6328d2961ce9885","type":"text","text":"# signup_tb tb","x":-180,"y":-1973,"width":250,"height":60},
-		{"id":"44e5e72b9fb7a704","type":"text","text":"# signup_cp cp  ","x":838,"y":-1952,"width":355,"height":60},
-		{"id":"22001f94ee66ac0d","type":"file","file":"Pasted image 20240724225830.png","x":838,"y":-1887,"width":355,"height":101},
-		{"id":"d33434c216e69e49","type":"text","text":"🤔도대체 2개가 왜 필요하지","x":396,"y":-2141,"width":295,"height":56},
-		{"id":"bc5afec143c5e703","type":"text","text":"♻️DB 싹 다시 생성 ","x":396,"y":-2085,"width":250,"height":60},
 		{"id":"d69add45d4feb1ed","type":"text","text":"# 회원가입 관련 컨트롤러 ","x":360,"y":1991,"width":528,"height":79}
 	],
 	"edges":[]

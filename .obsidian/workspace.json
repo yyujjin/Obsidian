@@ -60,9 +60,9 @@
               "state": {
                 "file": "로그인 코드 분석하기.canvas",
                 "viewState": {
-                  "x": 3798.510823561972,
-                  "y": 15514.02400933161,
-                  "zoom": 7.771561172376096e-16
+                  "x": -3570.6574705367475,
+                  "y": -1466.1144261050285,
+                  "zoom": -0.9999999999999996
                 }
               }
             }
@@ -197,10 +197,10 @@
   },
   "active": "35235029cff667b0",
   "lastOpenFiles": [
-    "Pasted image 20240725105010.png",
-    "Pasted image 20240725105003.png",
     "로그인 페이지 코드 분석.canvas",
     "로그인 코드 분석하기.canvas",
+    "Pasted image 20240725105010.png",
+    "Pasted image 20240725105003.png",
     "Pasted image 20240724171912.png",
     "채점프로그램/채점프로그램 언니 코드분석.canvas",
     "채점프로그램/Controller.md",
@@ -217,7 +217,6 @@
     "image/Pasted image 20240701114437.png",
     "image/Pasted image 20240701114312.png",
     "image/Pasted image 20240701110133.png",
-    "image/Pasted image 20240701110053.png",
     "jjobkorea/JJOB.canvas",
     "application.properties",
     "BoardMapper 3.java",
