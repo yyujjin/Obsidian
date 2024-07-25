@@ -58,11 +58,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "로그인 페이지 코드 분석.canvas",
+                "file": "로그인 코드 분석하기.canvas",
                 "viewState": {
-                  "x": 326.1442946969528,
-                  "y": -193.5827964663913,
-                  "zoom": -0.2690580631452785
+                  "x": 3097.1848785462935,
+                  "y": -1431.884712033831,
+                  "zoom": -0.9999999999999996
                 }
               }
             }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "로그인 페이지 코드 분석.canvas",
+                "file": "로그인 코드 분석하기.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "로그인 페이지 코드 분석.canvas",
+                "file": "로그인 코드 분석하기.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "로그인 페이지 코드 분석.canvas"
+                "file": "로그인 코드 분석하기.canvas"
               }
             }
           }
@@ -197,8 +197,8 @@
   },
   "active": "35235029cff667b0",
   "lastOpenFiles": [
-    "로그인 코드 분석하기.canvas",
     "로그인 페이지 코드 분석.canvas",
+    "로그인 코드 분석하기.canvas",
     "Pasted image 20240724171912.png",
     "채점프로그램/채점프로그램 언니 코드분석.canvas",
     "채점프로그램/Controller.md",
