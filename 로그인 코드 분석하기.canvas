@@ -1,5 +1,6 @@
 {
 	"nodes":[
+		{"id":"f11b289f9aa57f94","x":4256,"y":4447,"width":250,"height":60,"type":"text","text":""},
 		{"id":"71dc42c610125534","type":"text","text":"```java\n@PostMapping(\"/login_yn\")\n\n\n//🙋‍♀️ 파라미터를 넘기는게 아니라 dto로 바로 매핑하게 하면 어떰?\n\npublic String login_yn(@RequestParam HashMap<String, String> param, HttpServletRequest request, Model model) {\n\nlog.info(\"@# login_yn\"); \n\n\n//name과 value가 있는 것들이 파라미터로 넘어옴 => 로그인 타입(기업, 개인), 아이디, 비밀번호 \n\n//{loginType=individual, memId=user01, memPwd=1234}\n\n\n\n//📌컨트롤러와 서비스의 기능을 명확히 구분하는게 좋을 것같음\n\n//📌UserManagementService 로 서비스 생성해서 밑에 코드 넣기\n\n\n\n//로그인 타입을 확인해서\n//🤔여기서 로그인 타입을 굳이 왜 확인하는 거지 어차피 파라미터 넘길껀데\n\nString loginType = param.get(\"loginType\"); // 사용자 유형(개인/기업)\n\n//📌List로 변경하는게 좋을 듯\n//🙋‍♀️여기도 dto를 파라미터로 넘기는 거지\n//🤔근데 여기서 리스트를 반환 받을 게 없지않나? 그냥 아이디, 비번 맞는지 확인하는건데 유저 정보를 리스트로 저장하는 코드는 필요 없을 것 같음.\n//마이바티스 기능 이용해서 일치 유무만 확인하면 될 것 같음\n//단지 로그인체크해서 사용자 아이디만 받아올거면 리스트가 아닌 string으로 받아오면 될듯\nArrayList<MemDTO> user = service.loginYn(param);\n\n```","x":2160,"y":-1497,"width":880,"height":857},
 		{"id":"88e684814e2ded2f","type":"text","text":"##  service.loginYn(param)","x":3420,"y":-1462,"width":394,"height":62},
 		{"id":"77a8ef49ea8c550a","type":"text","text":"# MemServiceImpl","x":3420,"y":-1520,"width":300,"height":58},
@@ -19,7 +20,7 @@
 		{"id":"2db17c65067637ca","type":"text","text":"# MemController","x":2160,"y":-1620,"width":297,"height":57},
 		{"id":"8c7cc097fcb066d1","type":"text","text":"# login.jsp","x":-120,"y":-1651,"width":250,"height":60},
 		{"id":"c43dc24825c78d05","type":"text","text":"```java\n<!--개인-->\n\n<form id=\"individualForm\" method=\"post\" action=\"/login_yn\">\n\n<input type=\"hidden\" name=\"loginType\" value=\"individual\">\n\n<div class=\"input-container\">\n\n<input type=\"text\" name=\"memId\" placeholder=\"아이디\" required>\n\n</div>\n\n<div class=\"input-container\">\n\n<input type=\"password\" name=\"memPwd\" placeholder=\"비밀번호\" required>\n\n</div>\n\n<button type=\"submit\">로그인</button>\n\n<span class=\"register-link\" data-type=\"individual\">회원가입</span>\n\n</form>\n\n\n<!--기업-->\n\n<form id=\"companyForm\" method=\"post\" action=\"/login_yn\" style=\"display: none;\">\n\n<input type=\"hidden\" name=\"loginType\" value=\"enterprise\">\n\n<div class=\"input-container\">\n\n<input type=\"text\" name=\"memId\" placeholder=\"기업회원아이디\" required>\n\n</div>\n\n<div class=\"input-container\">\n\n<input type=\"password\" name=\"memPwd\" placeholder=\"비밀번호\" required>\n\n</div>\n\n<button type=\"submit\">로그인</button>\n\n<span class=\"register-link\" data-type=\"enterprise\">회원가입</span>\n\n</form>\n```","x":-120,"y":-1591,"width":1140,"height":1080},
-		{"id":"f125be6adfc80906","type":"text","text":"## 로그인 기능","x":130,"y":-1641,"width":276,"height":50},
+		{"id":"f125be6adfc80906","type":"text","text":"## 로그인 페이지","x":130,"y":-1641,"width":276,"height":50},
 		{"id":"8fc3aa15e94bf142","type":"text","text":"### 폼 작성하고 버튼 누르면 실행됨 ","x":1340,"y":-1078,"width":489,"height":50},
 		{"id":"0ea6e9ebad193499","type":"text","text":"```java\nconst urlParams = new URLSearchParams(window.location.search);\n\n\n//만약 파라미터에 error를 가지고 있으면 알림창 띄워라.\nif (urlParams.has('error')) {\n\nalert('아이디 또는 비밀번호가 일치하지 않습니다. 다시 확인 후 입력해주시기 바랍니다.');\n\n}\n```","x":3420,"y":200,"width":935,"height":255},
 		{"id":"850cdead01562c3a","type":"text","text":"# login.jsp (script 부분)","x":3420,"y":131,"width":385,"height":69},
@@ -49,7 +50,9 @@
 		{"id":"cc0f4dc6bc9d966b","type":"text","text":"### 메인 컨트롤러 리팩토링 하기\npage값도 그냥 파라미터로 넘겨버려서 \nmodel.attribute(page)이런식으로  페이지 값 바로 생성하기 ","x":5940,"y":3085,"width":534,"height":175},
 		{"id":"2e746a39a9927011","type":"text","text":"어차피 main/main으로 연결이 다 되는거니까 유저이름 상단에 표시하는 코드 한번만 추가  하면 됨. ","x":5940,"y":2900,"width":476,"height":78},
 		{"id":"451e13bdb6133c71","x":2200,"y":4900,"width":809,"height":400,"type":"text","text":"```java\n@PostMapping(\"/checkId\")\n\n@ResponseBody\n\npublic Map<String, Boolean> checkId(@RequestParam(\"memId\") String memId) {\n\nMap<String, Boolean> response = new HashMap<>();\n\nresponse.put(\"exists\", signupService.isMemIdExists(memId));\n\nreturn response;\n\n}\n```"},
-		{"id":"6eeca4fd7007828e","x":2200,"y":4830,"width":445,"height":70,"type":"text","text":"# @PostMapping(\"/checkId\")"}
+		{"id":"6eeca4fd7007828e","x":2200,"y":4830,"width":445,"height":70,"type":"text","text":"# @PostMapping(\"/checkId\")"},
+		{"id":"78b711e0b46d10f1","x":4000,"y":4596,"width":1278,"height":1008,"type":"text","text":"```javascript\nconsole.log(\"JQuery Loaded\");\n\n$('#memId, #enterpriseMemId').on('blur', function() {\n\nvar memId = $(this).val();\n\nconsole.log(\"memId:\", memId);\n\nif (memId) {\n\n$.ajax({\n\ntype: 'POST',\n\nurl: '/checkId',\n\ndata: { memId: memId },\n\nsuccess: function(response) {\n\nconsole.log(\"AJAX Response:\", response);\n\nif (response.exists) {\n\nalert('이미 존재하는 아이디입니다.'); // 메시지 창 띄우기\n\n$(this).val(''); // 입력 필드 초기화 (선택 사항)\n\n}\n\n},\n\nerror: function(xhr, status, error) {\n\nconsole.error(\"AJAX Error:\", status, error);\n\n}\n\n});\n\n}\n\n});\n```"},
+		{"id":"353ef0387b6eb273","x":4000,"y":4521,"width":307,"height":75,"type":"text","text":"## 회원 가입 페이지"}
 	],
 	"edges":[
 		{"id":"dbe65268fcf3c488","fromNode":"c43dc24825c78d05","fromSide":"right","toNode":"71dc42c610125534","toSide":"left"},
@@ -71,6 +74,7 @@
 		{"id":"80aff45602118435","fromNode":"33d943f622c17dd0","fromSide":"right","toNode":"cc0f4dc6bc9d966b","toSide":"left"},
 		{"id":"e548890081cbb28f","fromNode":"33d943f622c17dd0","fromSide":"right","toNode":"2e746a39a9927011","toSide":"left"},
 		{"id":"f93169f3e7f6c568","fromNode":"1474c7992bfc7c69","fromSide":"bottom","toNode":"2765d085923347e8","toSide":"top"},
-		{"id":"6319334afbc39b6d","fromNode":"48640f2484db0aa8","fromSide":"bottom","toNode":"451e13bdb6133c71","toSide":"top"}
+		{"id":"6319334afbc39b6d","fromNode":"48640f2484db0aa8","fromSide":"bottom","toNode":"451e13bdb6133c71","toSide":"top"},
+		{"id":"c094846b6a441030","fromNode":"451e13bdb6133c71","fromSide":"right","toNode":"78b711e0b46d10f1","toSide":"left"}
 	]
 }
