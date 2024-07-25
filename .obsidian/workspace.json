@@ -58,11 +58,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "로그인 코드 분석하기.canvas",
+                "file": "로그인 페이지 코드 분석.canvas",
                 "viewState": {
-                  "x": 3364.85191309564,
-                  "y": 1454.419865858758,
-                  "zoom": -1.6666666666666663
+                  "x": -287.9029592939537,
+                  "y": 1072.3520547791381,
+                  "zoom": -0.26905806314527897
                 }
               }
             }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "로그인 코드 분석하기.canvas",
+                "file": "로그인 페이지 코드 분석.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "로그인 코드 분석하기.canvas",
+                "file": "로그인 페이지 코드 분석.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "로그인 코드 분석하기.canvas"
+                "file": "로그인 페이지 코드 분석.canvas"
               }
             }
           }
@@ -197,9 +197,9 @@
   },
   "active": "35235029cff667b0",
   "lastOpenFiles": [
+    "로그인 코드 분석하기.canvas",
     "Pasted image 20240724171912.png",
     "채점프로그램/채점프로그램 언니 코드분석.canvas",
-    "로그인 코드 분석하기.canvas",
     "채점프로그램/Controller.md",
     "채점프로그램/결과보기 화면.canvas",
     "채점프로그램/결과 보기 기능 구현.md",
@@ -216,7 +216,6 @@
     "image/Pasted image 20240701110133.png",
     "image/Pasted image 20240701110053.png",
     "image/Pasted image 20240701103507.png",
-    "image/Pasted image 20240701103416.png",
     "jjobkorea/JJOB.canvas",
     "application.properties",
     "BoardMapper 3.java",
