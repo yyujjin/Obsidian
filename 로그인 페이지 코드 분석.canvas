@@ -7,8 +7,6 @@
 		{"id":"22001f94ee66ac0d","type":"file","file":"Pasted image 20240724225830.png","x":838,"y":-1887,"width":355,"height":101},
 		{"id":"d33434c216e69e49","type":"text","text":"🤔도대체 2개가 왜 필요하지","x":396,"y":-2141,"width":295,"height":56},
 		{"id":"bc5afec143c5e703","type":"text","text":"♻️DB 싹 다시 생성 ","x":396,"y":-2085,"width":250,"height":60},
-		{"id":"b3183fe78bb52fc6","type":"text","text":"```java\n// 세션에 사용자 정보 저장  \nHttpSession session = request.getSession();  \nsession.setAttribute(\"user\", foundUser);  \nlog.info(\"사용자 세션 저장 완료: \" + foundUser.getMemId());  \nreturn \"redirect:main\";\n```","x":-2376,"y":-1107,"width":621,"height":206},
-		{"id":"19fafae32a7ce5c6","type":"text","text":"# 로그인 성공 시  세션 저장 ","x":-2376,"y":-1201,"width":435,"height":69},
 		{"id":"d69add45d4feb1ed","type":"text","text":"# 회원가입 관련 컨트롤러 ","x":360,"y":1991,"width":528,"height":79}
 	],
 	"edges":[]
