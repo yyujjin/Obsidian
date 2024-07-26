@@ -77,9 +77,9 @@
 		{"id":"5e0af56b4a74f272","type":"file","file":"Pasted image 20240724225830.png","x":-3382,"y":-817,"width":355,"height":101},
 		{"id":"899e7e9201456e61","type":"text","text":"♻️DB 리팩토링도 필요","x":-3840,"y":-912,"width":250,"height":60},
 		{"id":"d8f1e140180075da","type":"text","text":"# sql \n```sql\nSELECT tb.memId, tb.memPwd, tb.memName, tb.cpId, cp.companyType, cp.companyRegistrationNum, cp.companyRepresentativeName, cp.companyName, cp.companyAddr, cp.companyBusinessRegistration AS companyBusinessRegistration, tb.userType FROM signup_tb tb\nLEFT JOIN signup_cp cp\nON tb.cpId = cp.id\nWHERE tb.memId = ?\";\n```","x":-4400,"y":-618,"width":2081,"height":252},
-		{"id":"0a837074988805d3","x":-4400,"y":-684,"width":420,"height":66,"type":"text","text":"이렇게 복잡한 sql을 할 필요가 없다고 생각 "},
+		{"id":"0a837074988805d3","type":"text","text":"이렇게 복잡한 sql을 할 필요가 없다고 생각 ","x":-4400,"y":-684,"width":420,"height":66},
 		{"id":"056e3fc35c58eda0","type":"text","text":"🤔도대체 2개가 왜 필요하지\n하나로 줄여서 지금 하는 방식대로 0,1 이런식으로 구분 ","x":-3840,"y":-998,"width":458,"height":86},
-		{"id":"8cda0c983441d6c6","x":-4400,"y":-1198,"width":505,"height":120,"type":"text","text":"# 회원관리\n- 어드민 추가"},
+		{"id":"8cda0c983441d6c6","type":"text","text":"# 회원관리\n- 어드민 추가","x":-4400,"y":-1198,"width":505,"height":120},
 		{"id":"98c0d42f6da43a35","type":"text","text":"# MemDTO,mapper 사용이 안되고 있다고 보여짐\n\n - MyBatis를 사용하지 않고 JDBC Template을 사용하여 데이터베이스에 접근\n- `jdbcTemplate` 객체를 사용하여 SQL 쿼리를 직접 작성하고 실행","x":7640,"y":12074,"width":709,"height":184}
 	],
 	"edges":[
