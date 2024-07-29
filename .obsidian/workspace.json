@@ -58,11 +58,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "로그인 코드 분석하기.canvas",
+                "file": "jjobkorea/로그인 리팩토링.canvas",
                 "viewState": {
-                  "x": 3759.7934596209607,
-                  "y": 929.3901389922693,
-                  "zoom": -0.6666666666666663
+                  "x": 1068.4641066605236,
+                  "y": -85.53866226733538,
+                  "zoom": -0.3333333333333334
                 }
               }
             }
@@ -118,8 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "87835c895c0434e9",
@@ -135,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "로그인 코드 분석하기.canvas",
+                "file": "jjobkorea/로그인 리팩토링.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "로그인 코드 분석하기.canvas",
+                "file": "jjobkorea/로그인 리팩토링.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "로그인 코드 분석하기.canvas"
+                "file": "jjobkorea/로그인 리팩토링.canvas"
               }
             }
           }
@@ -198,8 +197,10 @@
   },
   "active": "35235029cff667b0",
   "lastOpenFiles": [
-    "로그인 페이지 코드 분석.canvas",
-    "로그인 코드 분석하기.canvas",
+    "무제 파일.md",
+    "jjobkorea/로그인 리팩토링.canvas",
+    "jjobkorea/로그인 페이지 코드 분석.canvas",
+    "jjobkorea/로그인 코드 분석하기.canvas",
     "Pasted image 20240725105010.png",
     "Pasted image 20240725105003.png",
     "Pasted image 20240724171912.png",
@@ -231,7 +232,6 @@
     "image/2024-06-19.md",
     "image/2024-06-17.md",
     "README.md",
-    "무제 파일 1.canvas",
     "2024-06-28.md",
     "BoardController.java"
   ]
