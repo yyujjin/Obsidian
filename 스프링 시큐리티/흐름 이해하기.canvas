@@ -2,8 +2,6 @@
 	"nodes":[
 		{"id":"dddf1b0a99a0b227","type":"text","text":"```html\n<html>  \n<head>  \n    <meta charset=\"UTF-8\">  \n    <meta name=\"viewport\"  \n          content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">  \n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">  \n    <title>Document</title>  \n</head>  \n<body>  \n    <form action=\"/joinProc\" method=\"post\" name=\"joinForm\">  \n        <input type=\"text\" name=\"username\" placeholder=\"Username\"/>  \n        <input type=\"password\" name=\"password\" placeholder=\"Password\"/>  \n        <input type=\"submit\" value=\"Join\"/>  \n    </form>  \n</body>  \n</html>\n```","x":-341,"y":746,"width":1121,"height":414},
 		{"id":"4d7a20c3bc5d7c62","type":"text","text":"# 회원 가입 폼\n- join.mustache","x":-341,"y":645,"width":285,"height":101},
-		{"id":"1d2a7b0ae53e5f14","type":"text","text":"# 스프링 시큐리티 모식도","x":1640,"y":-1160,"width":400,"height":66},
-		{"id":"d6408e2252c4eed7","type":"file","file":"image/Pasted image 20240802144552.png","x":1640,"y":-1094,"width":400,"height":216},
 		{"id":"c30f6687d4ff47ae","type":"text","text":"- /joinProc 경로 실행 됨\n- 해당 경로는 로그인 안한 사람도 접근할 수 있게 config 설정 해줘야 함. ","x":960,"y":894,"width":443,"height":119},
 		{"id":"800f8e04edf46b87","type":"text","text":"# joinController","x":1640,"y":734,"width":280,"height":60},
 		{"id":"0f732928d8ec6e11","type":"text","text":"```java\n\n    @PostMapping(\"/joinProc\")  \n    public String joinProcess(JoinDTO joinDTO) {  \n  \n        log.info(\"넘어온 dto : {}\",joinDTO);  \n  \n        joinService.joinProcess(joinDTO);  \n        \n\t\t//이상 없으면 바로 로그인 페이지로 리다이렉트\n        return \"redirect:/login\";  \n    }  \n}\n```","x":1640,"y":794,"width":954,"height":320},
@@ -12,12 +10,6 @@
 		{"id":"d798e2c60fc95050","type":"text","text":"```java\n  \n    public void joinProcess(JoinDTO joinDTO) {  \n  \n    boolean isUser = userRepository.existsByUsername(joinDTO.getUsername());  \n    if (isUser) {  \n        return;  \n    }  \n    \n    UserEntity data = new UserEntity();  \n\n    //넘어온 joinDTO를 가지고 db에 넣는 거임\n    data.setUsername(joinDTO.getUsername());  \n    //비밀번호는 해쉬코드 사용해서 넣기 \n    data.setPassword(bCryptPasswordEncoder.encode(joinDTO.getPassword()));  \n    //해당 role을 부여함 \n    data.setRole(\"ROLE_ADMIN\");  \n    //Spring Data JPA에서 엔티티를 데이터베이스에 저장하거나 업데이트하는 역할\n    userRepository.save(data);  \n  \n}\n```","x":3480,"y":711,"width":1119,"height":487},
 		{"id":"84f080da7da164ec","type":"text","text":"```java\n//유저네임이 있다 ->t 없다 ->f\nboolean existsByUsername(String username);\n```","x":4760,"y":915,"width":548,"height":80},
 		{"id":"28433ef0cf46bbe1","type":"text","text":"- 마이바티스처럼 mapper 라고 생각하면 됨. \n- 데이터 넘겨서 동일한 유저아이디가 있다면 true 반환 ","x":4760,"y":835,"width":532,"height":80},
-		{"id":"4676d1820795c6f9","type":"text","text":"```html\n<html>  \n<head>  \n    <meta charset=\"UTF-8\">  \n    <meta name=\"viewport\"  \n          content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">  \n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">  \n    <title>Document</title>  \n</head>  \n<body>  \nlogin page  \n<hr>  \n<form action=\"/loginProc\" method=\"post\" name=\"loginForm\">  \n    <input id=\"username\" type=\"text\" name=\"username\" placeholder=\"id\"/>  \n    <input id=\"password\" type=\"password\" name=\"password\" placeholder=\"password\"/>  \n    <input type=\"submit\" value=\"login\"/>  \n</form>  \n</body>  \n</html>\n```","x":-341,"y":-186,"width":1171,"height":446},
-		{"id":"b1fdc5f309e0be59","type":"text","text":"# 로그인 폼\n- login.mustache","x":-341,"y":-280,"width":341,"height":94},
-		{"id":"ee4a022d8046e85b","type":"text","text":"- 유저가 로그인폼을 작성하면 /loginProc 경로가 실행됨\n-  /loginProc 접근 권한에 대해서는 로그인 안한 사용자도 config로 접근 허용해주어야 함. ","x":1182,"y":-10,"width":759,"height":95},
-		{"id":"569af123445372a5","type":"text","text":"# ?","x":2360,"y":8,"width":250,"height":60},
-		{"id":"ff49e8df5bb60287","type":"text","text":"- 지금 이 사용자가 db에 저장된 사용자인지 확인하는 로직이 어디있지?\n- 근데 어떻게 로그인이 되지?\n- 이걸 스프링 시큐리티가 자동으로 해주는건가?\n- 그렇다면 대단한데?","x":2360,"y":-162,"width":627,"height":170},
-		{"id":"fe0478814c80160d","type":"text","text":"### UserDetailsService를 이용해서 클래스를 만들어 주면\n\n- `UserDetailsService`를 사용하여 `UsernamePasswordAuthenticationToken` 객체를 생성\n- 이 객체는 사용자의 인증 정보를 담고 있으며, 인증 과정에서 `loadUserByUsername` 메서드가 호출되어 `UserDetails` 객체를 반환합니다.\n\n\n\n- 사용자가 로그인 폼에서 사용자 이름(혹은 사용자 ID)과 비밀번호를 입력하고 로그인 버튼을 클릭할 때, 스프링 시큐리티는 `UserDetailsService` 안에 있는 메서드를 자동으로 호출\n- 스프링 시큐리티는 이 메서드를 호출하여 데이터베이스에서 사용자의 정보(주로 사용자 이름, 비밀번호, 권한 등)를 조회합니다. (이건 내가 로직 짜야함)","x":4406,"y":-1500,"width":1434,"height":200},
 		{"id":"67ecf2fe54e198df","type":"text","text":"1. **로그인 시도**:\n    \n    - 사용자가 로그인 폼에서 사용자 이름과 비밀번호를 입력하고 로그인 버튼을 클릭합니다.","x":7008,"y":40,"width":810,"height":80},
 		{"id":"f698a57688aff3cc","type":"text","text":"# 스프링 시큐리티 인증 과정","x":7207,"y":-180,"width":413,"height":60},
 		{"id":"0c0d83a020611c5d","type":"text","text":"2. **`UsernamePasswordAuthenticationFilter`**:\n    \n    - 스프링 시큐리티는 `UsernamePasswordAuthenticationFilter`를 사용하여 로그인 요청을 처리합니다. 이 필터는 사용자가 입력한 사용자 이름과 비밀번호를 추출합니다.\n    - 로그인 요청을 처리하기 위해 `UsernamePasswordAuthenticationFilter`는 `UsernamePasswordAuthenticationToken` 객체를 생성합니다. 이 객체는 사용자 이름과 비밀번호를 포함합니다.","x":6602,"y":340,"width":1622,"height":126},
@@ -27,18 +19,21 @@
 		{"id":"0cabd7a9614cbb08","type":"text","text":"- `loadUserByUsername` 메서드를 오버라이드해서 작성하고 그 안에 db에 있는 사용자 정보를 스프링 시큐리티가 비교할 수 있게 로직을 짜줘야 함  \n- `UserEntity userData =  userRepository.findByUsername(username);`  => 나는 마이바티스 로직 짜서 데이터 넣어서 회원 유저인지 확인할 수 있게","x":8500,"y":1000,"width":1380,"height":115},
 		{"id":"75a50aff0e98cafa","type":"text","text":"5. **`UserDetails` 객체 반환**:\n    \n    - `UserDetailsService`에서 반환된 `UserDetails` 객체는 사용자 이름, 비밀번호, 권한 등의 정보를 담고 있습니다.\n    - 이 정보를 기반으로 `UsernamePasswordAuthenticationToken` 객체가 인증된 `Authentication` 객체로 변환됩니다.","x":6833,"y":1320,"width":1161,"height":127},
 		{"id":"1c4a55af053e4d01","type":"text","text":"6. **인증 성공 또는 실패**:\n    \n    - 인증이 성공하면, `Authentication` 객체는 `SecurityContext`에 저장되며, 사용자는 로그인된 상태로 처리됩니다.\n    - 인증이 실패하면, 스프링 시큐리티는 로그인 실패를 처리하고 ==적절한 에러 메시지를 표시합니다.==","x":6866,"y":1660,"width":1096,"height":138},
-		{"id":"c2f13e664ed3c1a0","type":"text","text":"`UserDetailsService`를 사용하여 클래스를 만들어 주었기에 스프링 시큐리티가 `UsernamePasswordAuthenticationToken` 객체를 생성하고 이 객체가 `UserDetailsService` 클래스 안에 있는 `loadUserByUsername` 메서드를 호출하는거야","x":4406,"y":-1640,"width":1086,"height":80},
 		{"id":"9f737d237539c1b1","x":8295,"y":1330,"width":1238,"height":107,"type":"text","text":"**`Authentication` 객체**: 이 객체는 인증된 사용자의 정보를 나타내며, `UserDetails` 객체를 포함하고 있습니다. 보통 `UsernamePasswordAuthenticationToken` 같은 클래스가 사용됩니다. `Authentication` 객체는 사용자의 인증 상태와 권한 정보 등을 담고 있습니다."},
 		{"id":"0de46f0688055fd8","x":8175,"y":1683,"width":933,"height":93,"type":"text","text":"`SecurityContext`는 현재의 보안 컨텍스트를 유지하는 객체로, 보통 `SecurityContextHolder`를 통해 접근합니다. 이 컨텍스트는 현재 인증된 사용자에 대한 `Authentication` 객체를 보관하고 있습니다."},
 		{"id":"56b9ee8f25ff4b3d","x":8175,"y":1880,"width":1179,"height":85,"type":"text","text":"기본적으로, 스프링 시큐리티는 인증 실패 시 `UsernamePasswordAuthenticationFilter`를 통해 `AuthenticationException`을 발생시킵니다. 이 예외는 ==일반적으로 로그인 페이지로 리다이렉트되며,== 파라미터에 실패 이유를 포함할 수 있습니다."},
-		{"id":"bd3700425d72e3e1","x":9740,"y":1845,"width":1313,"height":156,"type":"text","text":"**커스텀 핸들러**:\n\n- 인증 실패 시 사용자에게 제공할 에러 메시지를 커스터마이즈하려면 `AuthenticationFailureHandler`를 구현하여 사용자 정의 핸들러를 생성할 수 있습니다.\n- 예를 들어, 실패 원인에 따라 구체적인 에러 메시지를 설정하고 이를 로그인 페이지에 표시할 수 있습니다."}
+		{"id":"bd3700425d72e3e1","x":9740,"y":1845,"width":1313,"height":156,"type":"text","text":"**커스텀 핸들러**:\n\n- 인증 실패 시 사용자에게 제공할 에러 메시지를 커스터마이즈하려면 `AuthenticationFailureHandler`를 구현하여 사용자 정의 핸들러를 생성할 수 있습니다.\n- 예를 들어, 실패 원인에 따라 구체적인 에러 메시지를 설정하고 이를 로그인 페이지에 표시할 수 있습니다."},
+		{"id":"1d2a7b0ae53e5f14","type":"text","text":"# 스프링 시큐리티 모식도","x":1720,"y":-2400,"width":400,"height":66},
+		{"id":"d6408e2252c4eed7","type":"file","file":"image/Pasted image 20240802144552.png","x":1720,"y":-2334,"width":400,"height":216},
+		{"id":"b1fdc5f309e0be59","type":"text","text":"# 로그인 폼\n- login.mustache","x":4175,"y":-1440,"width":341,"height":94},
+		{"id":"4676d1820795c6f9","type":"text","text":"```html\n<html>  \n<head>  \n    <meta charset=\"UTF-8\">  \n    <meta name=\"viewport\"  \n          content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">  \n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">  \n    <title>Document</title>  \n</head>  \n<body>  \nlogin page  \n<hr>  \n<form action=\"/loginProc\" method=\"post\" name=\"loginForm\">  \n    <input id=\"username\" type=\"text\" name=\"username\" placeholder=\"id\"/>  \n    <input id=\"password\" type=\"password\" name=\"password\" placeholder=\"password\"/>  \n    <input type=\"submit\" value=\"login\"/>  \n</form>  \n</body>  \n</html>\n```","x":4175,"y":-1346,"width":1171,"height":446},
+		{"id":"ee4a022d8046e85b","type":"text","text":"- 유저가 로그인폼을 작성하면 /loginProc 경로가 실행됨\n-  /loginProc 접근 권한에 대해서는 로그인 안한 사용자도 config로 접근 허용해주어야 함. ","x":5698,"y":-1170,"width":759,"height":95}
 	],
 	"edges":[
 		{"id":"db563ec7ecd5527c","fromNode":"dddf1b0a99a0b227","fromSide":"right","toNode":"0f732928d8ec6e11","toSide":"left"},
 		{"id":"5c3e26994b8f6620","fromNode":"0f732928d8ec6e11","fromSide":"right","toNode":"d798e2c60fc95050","toSide":"left"},
 		{"id":"68e57d32bcb6da8b","fromNode":"d798e2c60fc95050","fromSide":"right","toNode":"84f080da7da164ec","toSide":"left"},
 		{"id":"c37a1af6a4a0fb85","fromNode":"4676d1820795c6f9","fromSide":"right","toNode":"ee4a022d8046e85b","toSide":"left"},
-		{"id":"c56ab18ff1eb34e7","fromNode":"ee4a022d8046e85b","fromSide":"right","toNode":"569af123445372a5","toSide":"left"},
 		{"id":"4e890bc9b0716033","fromNode":"f698a57688aff3cc","fromSide":"bottom","toNode":"67ecf2fe54e198df","toSide":"top"},
 		{"id":"86d0f08fb4743637","fromNode":"67ecf2fe54e198df","fromSide":"bottom","toNode":"0c0d83a020611c5d","toSide":"top"},
 		{"id":"5fb22bbd48096cfd","fromNode":"0c0d83a020611c5d","fromSide":"bottom","toNode":"9332779fc393af89","toSide":"top"},
@@ -51,6 +46,7 @@
 		{"id":"aeb901c28bf37bce","fromNode":"75a50aff0e98cafa","fromSide":"right","toNode":"9f737d237539c1b1","toSide":"left"},
 		{"id":"8829474c22df5e3c","fromNode":"1c4a55af053e4d01","fromSide":"right","toNode":"0de46f0688055fd8","toSide":"left"},
 		{"id":"09cad8725cd7b975","fromNode":"1c4a55af053e4d01","fromSide":"right","toNode":"56b9ee8f25ff4b3d","toSide":"left"},
-		{"id":"ffeb814d6c7ddf88","fromNode":"56b9ee8f25ff4b3d","fromSide":"right","toNode":"bd3700425d72e3e1","toSide":"left"}
+		{"id":"ffeb814d6c7ddf88","fromNode":"56b9ee8f25ff4b3d","fromSide":"right","toNode":"bd3700425d72e3e1","toSide":"left"},
+		{"id":"4357f904c358a969","fromNode":"ee4a022d8046e85b","fromSide":"right","toNode":"f698a57688aff3cc","toSide":"top"}
 	]
 }
