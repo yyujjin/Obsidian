@@ -56,9 +56,14 @@
             "id": "35235029cff667b0",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "canvas",
               "state": {
-                "file": "Pasted image 20240802144552.png"
+                "file": "스프링 시큐리티/흐름 이해하기.canvas",
+                "viewState": {
+                  "x": 1632.1267061163542,
+                  "y": 339.898070733666,
+                  "zoom": 1.1102230246251565e-16
+                }
               }
             }
           }
@@ -113,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "87835c895c0434e9",
@@ -129,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20240802144552.png",
+                "file": "스프링 시큐리티/흐름 이해하기.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20240802144552.png",
+                "file": "스프링 시큐리티/흐름 이해하기.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20240802144552.png"
+                "file": "스프링 시큐리티/흐름 이해하기.canvas"
               }
             }
           }
@@ -192,9 +198,10 @@
   },
   "active": "35235029cff667b0",
   "lastOpenFiles": [
+    "채점프로그램/Controller.md",
+    "image/Pasted image 20240802144552.png",
     "스프링 시큐리티/흐름 이해하기.canvas",
     "채점프로그램/결과 보기 기능 구현.md",
-    "Pasted image 20240802144552.png",
     "mvc 패턴 이해하기/mvc 패턴 흐름 이해하기.canvas",
     "스프링 시큐리티",
     "jjobkorea/로그인 코드 분석하기.canvas",
@@ -207,7 +214,6 @@
     "image/Pasted image 20240725105003.png",
     "image/Pasted image 20240724171912.png",
     "채점프로그램/채점프로그램 언니 코드분석.canvas",
-    "채점프로그램/Controller.md",
     "채점프로그램/결과보기 화면.canvas",
     "채점프로그램",
     "image/Pasted image 20240718144448.png",
