@@ -14,12 +14,15 @@
 		{"id":"28433ef0cf46bbe1","type":"text","text":"- 마이바티스처럼 mapper 라고 생각하면 됨. \n- 데이터 넘겨서 동일한 유저아이디가 있다면 true 반환 ","x":4760,"y":835,"width":532,"height":80},
 		{"id":"4676d1820795c6f9","x":-341,"y":-186,"width":1171,"height":446,"type":"text","text":"```html\n<html>  \n<head>  \n    <meta charset=\"UTF-8\">  \n    <meta name=\"viewport\"  \n          content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">  \n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">  \n    <title>Document</title>  \n</head>  \n<body>  \nlogin page  \n<hr>  \n<form action=\"/loginProc\" method=\"post\" name=\"loginForm\">  \n    <input id=\"username\" type=\"text\" name=\"username\" placeholder=\"id\"/>  \n    <input id=\"password\" type=\"password\" name=\"password\" placeholder=\"password\"/>  \n    <input type=\"submit\" value=\"login\"/>  \n</form>  \n</body>  \n</html>\n```"},
 		{"id":"b1fdc5f309e0be59","x":-341,"y":-280,"width":341,"height":94,"type":"text","text":"# 로그인 폼\n- login.mustache"},
-		{"id":"ee4a022d8046e85b","x":1182,"y":-10,"width":759,"height":95,"type":"text","text":"- 유저가 로그인폼을 작성하면 /loginProc 경로가 실행됨\n-  /loginProc 접근 권한에 대해서는 로그인 안한 사용자도 config로 접근 허용해주어야 함. "}
+		{"id":"ee4a022d8046e85b","x":1182,"y":-10,"width":759,"height":95,"type":"text","text":"- 유저가 로그인폼을 작성하면 /loginProc 경로가 실행됨\n-  /loginProc 접근 권한에 대해서는 로그인 안한 사용자도 config로 접근 허용해주어야 함. "},
+		{"id":"569af123445372a5","x":2360,"y":8,"width":250,"height":60,"type":"text","text":"# ?"},
+		{"id":"ff49e8df5bb60287","x":2360,"y":-162,"width":627,"height":170,"type":"text","text":"- 지금 이 사용자가 db에 저장된 사용자인지 확인하는 로직이 어디있지?\n- 근데 어떻게 로그인이 되지?\n- 이걸 스프링 시큐리티가 자동으로 해주는건가?\n- 그렇다면 대단한데?"}
 	],
 	"edges":[
 		{"id":"db563ec7ecd5527c","fromNode":"dddf1b0a99a0b227","fromSide":"right","toNode":"0f732928d8ec6e11","toSide":"left"},
 		{"id":"5c3e26994b8f6620","fromNode":"0f732928d8ec6e11","fromSide":"right","toNode":"d798e2c60fc95050","toSide":"left"},
 		{"id":"68e57d32bcb6da8b","fromNode":"d798e2c60fc95050","fromSide":"right","toNode":"84f080da7da164ec","toSide":"left"},
-		{"id":"c37a1af6a4a0fb85","fromNode":"4676d1820795c6f9","fromSide":"right","toNode":"ee4a022d8046e85b","toSide":"left"}
+		{"id":"c37a1af6a4a0fb85","fromNode":"4676d1820795c6f9","fromSide":"right","toNode":"ee4a022d8046e85b","toSide":"left"},
+		{"id":"c56ab18ff1eb34e7","fromNode":"ee4a022d8046e85b","fromSide":"right","toNode":"569af123445372a5","toSide":"left"}
 	]
 }
