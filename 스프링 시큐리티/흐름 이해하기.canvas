@@ -28,7 +28,8 @@
 		{"id":"75a50aff0e98cafa","type":"text","text":"5. **`UserDetails` 객체 반환**:\n    \n    - `UserDetailsService`에서 반환된 `UserDetails` 객체는 사용자 이름, 비밀번호, 권한 등의 정보를 담고 있습니다.\n    - 이 정보를 기반으로 `UsernamePasswordAuthenticationToken` 객체가 인증된 `Authentication` 객체로 변환됩니다.","x":6833,"y":1320,"width":1161,"height":127},
 		{"id":"1c4a55af053e4d01","type":"text","text":"6. **인증 성공 또는 실패**:\n    \n    - 인증이 성공하면, `Authentication` 객체는 `SecurityContext`에 저장되며, 사용자는 로그인된 상태로 처리됩니다.\n    - 인증이 실패하면, 스프링 시큐리티는 로그인 실패를 처리하고 적절한 에러 메시지를 표시합니다.","x":6866,"y":1660,"width":1096,"height":138},
 		{"id":"c2f13e664ed3c1a0","type":"text","text":"`UserDetailsService`를 사용하여 클래스를 만들어 주었기에 스프링 시큐리티가 `UsernamePasswordAuthenticationToken` 객체를 생성하고 이 객체가 `UserDetailsService` 클래스 안에 있는 `loadUserByUsername` 메서드를 호출하는거야","x":4406,"y":-1640,"width":1086,"height":80},
-		{"id":"5d06d3d0e36fc714","x":8087,"y":1691,"width":827,"height":76,"type":"text","text":"`SecurityContext`는 주로 보안과 관련된 컨텍스트 정보를 저장하고 관리하는 객체입니다."}
+		{"id":"9f737d237539c1b1","x":8295,"y":1330,"width":1238,"height":107,"type":"text","text":"**`Authentication` 객체**: 이 객체는 인증된 사용자의 정보를 나타내며, `UserDetails` 객체를 포함하고 있습니다. 보통 `UsernamePasswordAuthenticationToken` 같은 클래스가 사용됩니다. `Authentication` 객체는 사용자의 인증 상태와 권한 정보 등을 담고 있습니다."},
+		{"id":"0de46f0688055fd8","x":8175,"y":1683,"width":933,"height":93,"type":"text","text":"`SecurityContext`는 현재의 보안 컨텍스트를 유지하는 객체로, 보통 `SecurityContextHolder`를 통해 접근합니다. 이 컨텍스트는 현재 인증된 사용자에 대한 `Authentication` 객체를 보관하고 있습니다."}
 	],
 	"edges":[
 		{"id":"db563ec7ecd5527c","fromNode":"dddf1b0a99a0b227","fromSide":"right","toNode":"0f732928d8ec6e11","toSide":"left"},
@@ -45,6 +46,7 @@
 		{"id":"e2642efaa785ec2f","fromNode":"b115b2c3d47b36ab","fromSide":"bottom","toNode":"75a50aff0e98cafa","toSide":"top"},
 		{"id":"d3f2f50a4b8184a5","fromNode":"cbef23884c29a6c0","fromSide":"bottom","toNode":"75a50aff0e98cafa","toSide":"right"},
 		{"id":"c9478abac6a49bb4","fromNode":"75a50aff0e98cafa","fromSide":"bottom","toNode":"1c4a55af053e4d01","toSide":"top"},
-		{"id":"b05784bd1f6687de","fromNode":"1c4a55af053e4d01","fromSide":"right","toNode":"5d06d3d0e36fc714","toSide":"left"}
+		{"id":"aeb901c28bf37bce","fromNode":"75a50aff0e98cafa","fromSide":"right","toNode":"9f737d237539c1b1","toSide":"left"},
+		{"id":"8829474c22df5e3c","fromNode":"1c4a55af053e4d01","fromSide":"right","toNode":"0de46f0688055fd8","toSide":"left"}
 	]
 }
