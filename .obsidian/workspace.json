@@ -56,14 +56,9 @@
             "id": "35235029cff667b0",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "image",
               "state": {
-                "file": "jjobkorea/로그인 리팩토링.canvas",
-                "viewState": {
-                  "x": 115.49393312738647,
-                  "y": 1254.0668712521524,
-                  "zoom": -0.3333333333333334
-                }
+                "file": "Pasted image 20240802144552.png"
               }
             }
           }
@@ -134,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "jjobkorea/로그인 리팩토링.canvas",
+                "file": "Pasted image 20240802144552.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "jjobkorea/로그인 리팩토링.canvas",
+                "file": "Pasted image 20240802144552.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "jjobkorea/로그인 리팩토링.canvas"
+                "file": "Pasted image 20240802144552.png"
               }
             }
           }
@@ -197,29 +192,31 @@
   },
   "active": "35235029cff667b0",
   "lastOpenFiles": [
+    "스프링 시큐리티/흐름 이해하기.canvas",
+    "채점프로그램/결과 보기 기능 구현.md",
+    "Pasted image 20240802144552.png",
+    "mvc 패턴 이해하기/mvc 패턴 흐름 이해하기.canvas",
+    "스프링 시큐리티",
     "jjobkorea/로그인 코드 분석하기.canvas",
-    "jjobkorea/로그인 페이지 코드 분석.canvas",
     "jjobkorea/로그인 리팩토링.canvas",
+    "jjobkorea/1차 프로젝트 흐름도.canvas",
+    "jjobkorea/로그인 페이지 코드 분석.canvas",
+    "jjobkorea/task.canvas",
     "무제 파일.md",
-    "Pasted image 20240725105010.png",
-    "Pasted image 20240725105003.png",
-    "Pasted image 20240724171912.png",
+    "image/Pasted image 20240725105010.png",
+    "image/Pasted image 20240725105003.png",
+    "image/Pasted image 20240724171912.png",
     "채점프로그램/채점프로그램 언니 코드분석.canvas",
     "채점프로그램/Controller.md",
     "채점프로그램/결과보기 화면.canvas",
-    "채점프로그램/결과 보기 기능 구현.md",
     "채점프로그램",
-    "Pasted image 20240718144448.png",
-    "jjobkorea/task.canvas",
+    "image/Pasted image 20240718144448.png",
     "파일 구조 비교.canvas",
-    "image/파일 구조 비교.canvas",
     "Pasted image 20240701110133.png",
     "image/Pasted image 20240701143354.png",
     "image/Pasted image 20240701143321.png",
     "image/Pasted image 20240701114437.png",
     "image/Pasted image 20240701114312.png",
-    "image/Pasted image 20240701110133.png",
-    "jjobkorea/JJOB.canvas",
     "application.properties",
     "BoardMapper 3.java",
     "mybatis-config 1.xml",
@@ -228,11 +225,9 @@
     "BoardMapper 1.java",
     "BoardMapper.java",
     "mybatis-config.xml",
-    "mvc 패턴 이해하기/mvc 패턴 흐름 이해하기.canvas",
     "image/2024-06-19.md",
     "image/2024-06-17.md",
     "README.md",
-    "2024-06-28.md",
-    "BoardController.java"
+    "2024-06-28.md"
   ]
 }
