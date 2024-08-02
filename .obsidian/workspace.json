@@ -58,11 +58,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "스프링 시큐리티/흐름 이해하기.canvas",
+                "file": "스프링 시큐리티/세션 하이재킹(Session Hijacking).canvas",
                 "viewState": {
-                  "x": 10171.803246255748,
-                  "y": 1971.897066534946,
-                  "zoom": -0.3333333333333334
+                  "x": 16.29141137337788,
+                  "y": 53.94294789297632,
+                  "zoom": 0
                 }
               }
             }
@@ -118,8 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "87835c895c0434e9",
@@ -135,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "스프링 시큐리티/흐름 이해하기.canvas",
+                "file": "스프링 시큐리티/세션 하이재킹(Session Hijacking).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "스프링 시큐리티/흐름 이해하기.canvas",
+                "file": "스프링 시큐리티/세션 하이재킹(Session Hijacking).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "스프링 시큐리티/흐름 이해하기.canvas"
+                "file": "스프링 시큐리티/세션 하이재킹(Session Hijacking).canvas"
               }
             }
           }
@@ -199,6 +198,7 @@
   "active": "35235029cff667b0",
   "lastOpenFiles": [
     "스프링 시큐리티/흐름 이해하기.canvas",
+    "스프링 시큐리티/세션 하이재킹(Session Hijacking).canvas",
     "채점프로그램/Controller.md",
     "image/Pasted image 20240802144552.png",
     "채점프로그램/결과 보기 기능 구현.md",
