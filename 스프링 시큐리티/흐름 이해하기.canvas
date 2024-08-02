@@ -27,7 +27,8 @@
 		{"id":"0cabd7a9614cbb08","x":8500,"y":1000,"width":1380,"height":115,"type":"text","text":"- `loadUserByUsername` 메서드를 오버라이드해서 작성하고 그 안에 db에 있는 사용자 정보를 스프링 시큐리티가 비교할 수 있게 로직을 짜줘야 함  \n- `UserEntity userData =  userRepository.findByUsername(username);`  => 나는 마이바티스 로직 짜서 데이터 넣어서 회원 유저인지 확인할 수 있게"},
 		{"id":"75a50aff0e98cafa","x":6833,"y":1320,"width":1161,"height":127,"type":"text","text":"5. **`UserDetails` 객체 반환**:\n    \n    - `UserDetailsService`에서 반환된 `UserDetails` 객체는 사용자 이름, 비밀번호, 권한 등의 정보를 담고 있습니다.\n    - 이 정보를 기반으로 `UsernamePasswordAuthenticationToken` 객체가 인증된 `Authentication` 객체로 변환됩니다."},
 		{"id":"1c4a55af053e4d01","x":6866,"y":1660,"width":1096,"height":138,"type":"text","text":"6. **인증 성공 또는 실패**:\n    \n    - 인증이 성공하면, `Authentication` 객체는 `SecurityContext`에 저장되며, 사용자는 로그인된 상태로 처리됩니다.\n    - 인증이 실패하면, 스프링 시큐리티는 로그인 실패를 처리하고 적절한 에러 메시지를 표시합니다."},
-		{"id":"c2f13e664ed3c1a0","x":4406,"y":-1640,"width":1086,"height":80,"type":"text","text":"`UserDetailsService`를 사용하여 클래스를 만들어 주었기에 스프링 시큐리티가 `UsernamePasswordAuthenticationToken` 객체를 생성하고 이 객체가 `UserDetailsService` 클래스 안에 있는 `loadUserByUsername` 메서드를 호출하는거야"}
+		{"id":"c2f13e664ed3c1a0","x":4406,"y":-1640,"width":1086,"height":80,"type":"text","text":"`UserDetailsService`를 사용하여 클래스를 만들어 주었기에 스프링 시큐리티가 `UsernamePasswordAuthenticationToken` 객체를 생성하고 이 객체가 `UserDetailsService` 클래스 안에 있는 `loadUserByUsername` 메서드를 호출하는거야"},
+		{"id":"57a21b68520dc188","x":5485,"y":-1220,"width":695,"height":200,"type":"text","text":"```java\n//메인 페이지 헤더에 있는 마이페이지 버튼을 눌렀을 때 실행되는 로직 \n@Getmapping(\"/mypage\")\npublic String mypage() {\n\n\treturn \"user/userInfo\"\n\n}\n```"}
 	],
 	"edges":[
 		{"id":"db563ec7ecd5527c","fromNode":"dddf1b0a99a0b227","fromSide":"right","toNode":"0f732928d8ec6e11","toSide":"left"},
